@@ -1,7 +1,7 @@
 # skynet-ai-2025
 
 <div align="center" style="text-align: center;">
-   <img src="adr/images/SkynetAI-kata.png" alt="O'Reilly Architecture Kata: Winter 2025 - Architecture & AI" style="max-width: 500px; max-height: 500px;" />
+   <img src="adr/images/SkynetAI-kata.png" alt="O'Reilly Architecture Kata: Winter 2025 - Architecture & AI" width="400" height="400" />
 </div>
 
 ---
