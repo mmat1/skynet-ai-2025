@@ -1,5 +1,9 @@
 # skynet-ai-2025
 
+ <div align="center" style="text-align: center;">
+   <img src="adr/images/SkynetAI-kata.png" alt="O'Reilly Architecture Kata: Winter 2025 - Architecture & AI" />
+</div>
+
 ---
 
 ## **Table of Contents**
