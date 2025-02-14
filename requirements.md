@@ -56,9 +56,6 @@
 #### Nice to have
 - Implement AI to grade experts on the accuracy, timeliness, and detail of their reviews.
 
-#### Must have
-- Gather feedback on expert accuracy from analyzed aptitude test reports and have AI analyze the feedback and provide summary.
-
 ### AI Observability
 
 #### Must have
@@ -67,7 +64,9 @@
 - Build observability features to monitor AI cost, accuracy, bias, and time reduction/improvements.
 - Explainable AI
 
-### Feedback for New Case Studies
+### Feedback for New Case Studies/Aptitude tests
 
+#### Must have
+- Gather feedback on expert accuracy from analyzed aptitude test reports and have AI analyze the feedback and provide summary.
 - Allow designated experts to send out surveys to other experts for feedback on new case studies.
 - Use AI to review and summarize the feedback, aiding in the creation and modification of case studies.
