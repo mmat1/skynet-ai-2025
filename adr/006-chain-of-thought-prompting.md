@@ -6,6 +6,8 @@ date_created: 02/13/2025
 last_updated: 02/13/2025
 ---
 
+## TODO: Explore the use of Chain-of-Thought prompt engineering strategy as an alternative to RAG
+
 ## Status
 
 - The following statuses are considered valid and should be followed by a date; proposed, accepted, and superseded. Example;

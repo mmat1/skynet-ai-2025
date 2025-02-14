@@ -6,6 +6,8 @@ date_created: 02/13/2025
 last_updated: 02/13/2025
 ---
 
+## TODO: Decide on the indexing strategy for questions and answers, considering options like single index, index per question, or index per question and version.
+
 ## Status
 
 - The following statuses are considered valid and should be followed by a date; proposed, accepted, and superseded. Example;
