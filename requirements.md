@@ -14,12 +14,6 @@
 
 - Create a breakdown/analysis of test results using AI.
 
-
-### Case Study Solutions Management(Database for Case Study Solutions)
-
-- Audit all added solutions for case studies.
-- Add a process to include new solutions to the answer set for each case study, building a comprehensive set of possible solutions for AI reference.
-
 ### AI Grading Confidence, Plagiarism Detection and Automation (Short Answer Review and Case Study Solution)
 
 - Implement AI grading with a confidence level value and check for plagiarism, ensuring candidates are not cheating.
