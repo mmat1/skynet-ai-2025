@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2025-02-17T15:28:31.621Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.1 Chrome/112.0.5615.87 Electron/24.1.2 Safari/537.36" etag="1ZpcPsz0m7RAXuF8cdcI" version="21.2.1" type="device" pages="4">
+<mxfile host="Electron" modified="2025-02-17T15:30:19.270Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.1 Chrome/112.0.5615.87 Electron/24.1.2 Safari/537.36" etag="Z-Whb9cMNlMi2bwbZ_2g" version="21.2.1" type="device" pages="4">
   <diagram name="High Level Approach" id="JulvsSPHi9Jr_7Jm3-x4">
     <mxGraphModel dx="2049" dy="3394" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -171,7 +171,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ySqEjmFEnSd4gUKyHkAf" name="Option 2: Short Answer">
-    <mxGraphModel dx="1687" dy="-116" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1366" dy="-304" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -312,14 +312,14 @@
         <mxCell id="llPc_HmlTpIFPcBkZiys-41" value="&lt;b&gt;Prompt&lt;br&gt;Validation&lt;br&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1340" y="1850" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="FAQ8SjFKWdRQwwW_EuPi-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FAQ8SjFKWdRQwwW_EuPi-11" target="FAQ8SjFKWdRQwwW_EuPi-12">
+        <mxCell id="zBo2JKRc_5d1mUjpZlG1-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FAQ8SjFKWdRQwwW_EuPi-11" target="zBo2JKRc_5d1mUjpZlG1-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="FAQ8SjFKWdRQwwW_EuPi-11" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Expert Graded&lt;br&gt;&lt;/b&gt;&lt;/span&gt;Exam Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="1">
           <mxGeometry x="2760" y="1530" width="120" height="130" as="geometry" />
         </mxCell>
         <mxCell id="FAQ8SjFKWdRQwwW_EuPi-12" value="&lt;b&gt;CANDIDATE&lt;/b&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="3030" y="1475" width="150" height="240" as="geometry" />
+          <mxGeometry x="3420" y="1475" width="150" height="240" as="geometry" />
         </mxCell>
         <mxCell id="FAQ8SjFKWdRQwwW_EuPi-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FAQ8SjFKWdRQwwW_EuPi-13" target="FAQ8SjFKWdRQwwW_EuPi-11">
           <mxGeometry relative="1" as="geometry" />
@@ -337,6 +337,12 @@
         </mxCell>
         <mxCell id="FAQ8SjFKWdRQwwW_EuPi-14" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;AI Response&lt;br&gt;Feedback&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="1">
           <mxGeometry x="2760" y="1740" width="120" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="zBo2JKRc_5d1mUjpZlG1-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="zBo2JKRc_5d1mUjpZlG1-1" target="FAQ8SjFKWdRQwwW_EuPi-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zBo2JKRc_5d1mUjpZlG1-1" value="&lt;b&gt;CANDIDATE EMAIL SERVICE:&lt;/b&gt;&lt;div&gt;&lt;b&gt;GENERATION / SENDING OF EMAILS&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;&lt;b&gt;Take Expert Graded Exam record&lt;/b&gt;&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;&lt;b&gt;Apply any formatting needed&lt;/b&gt;&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;&lt;b&gt;Send to candidateID&#39;s email address&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="2950" y="1525" width="330" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
