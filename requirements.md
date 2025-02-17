@@ -23,14 +23,16 @@
 ### AI Review and Feedback on Test Reports (Admin - Aptitude Test Analysis Report )
 
 - Use AI to review test reports and provide summaries with feedback on question relevance.
-- Analyze both multiple-choice and short answer questions, as well as expert reviews.
+- Analyze both multiple-choice and short answer questions.
 
 ### AI Observability
 
-- Implement observability features to provide details on AI review accuracy.
-- Make adjustments based on observations and feed them back into the model for continuous training.
-- Build observability features to monitor AI cost, accuracy, bias, and time reduction/improvements.
-- Explainable AI
+- Implement observability features to provide details on AI review accuracy, bias. (Auditing AI reviews)
+- Make adjustments based on observations and feed them back into the model for continuous training.(Feed it back to vector DB)
+- Build observability features to monitor AI cost, and time reduction/improvements.(Dashboard for AI cost and Insights into ROI based on AI usage)
+- Performance, reliablity(SLA/SLO)?
+- Explainable AI()
+- Analyze reviews which have a conflict between AI review and expert reviews and provide suggestions.
 
 ### Feedback for New Case Studies/Aptitude tests
 
