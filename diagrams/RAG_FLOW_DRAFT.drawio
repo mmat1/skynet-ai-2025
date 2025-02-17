@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2025-02-17T15:30:19.270Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.1 Chrome/112.0.5615.87 Electron/24.1.2 Safari/537.36" etag="Z-Whb9cMNlMi2bwbZ_2g" version="21.2.1" type="device" pages="4">
+<mxfile host="Electron" modified="2025-02-17T15:31:39.749Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.1 Chrome/112.0.5615.87 Electron/24.1.2 Safari/537.36" etag="Fhto9GpsmbiXqs_AsdB7" version="21.2.1" type="device" pages="4">
   <diagram name="High Level Approach" id="JulvsSPHi9Jr_7Jm3-x4">
     <mxGraphModel dx="2049" dy="3394" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -171,7 +171,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ySqEjmFEnSd4gUKyHkAf" name="Option 2: Short Answer">
-    <mxGraphModel dx="1366" dy="-304" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1687" dy="-116" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -302,9 +302,6 @@
         </mxCell>
         <mxCell id="llPc_HmlTpIFPcBkZiys-38" value="Chunk data&amp;nbsp;&lt;div&gt;(if needed)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="800" y="1720" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="llPc_HmlTpIFPcBkZiys-39" value="&lt;b&gt;QuestionID: question1&lt;/b&gt;&lt;div&gt;&lt;b&gt;VERSION 1&lt;/b&gt;&lt;div&gt;How does RAG AI work?&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;DateAdded: 02/02/1990&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Grading Criteria / Rubric:&lt;/div&gt;&lt;div&gt;Associated Conepts:&amp;nbsp; LLM, RAG, AI, etc&lt;/div&gt;&lt;div&gt;Accepted Solution Information:&amp;nbsp; &amp;lt;good answers&amp;gt;&lt;/div&gt;&lt;div&gt;Metadata: Question #, Version#, Day added, Associated Concepts&lt;/div&gt;&lt;div&gt;Embedding: [12034912, 120349120934, 1041023491, etc...]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;horizontal=1;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="490" y="1660" width="280" height="190" as="geometry" />
         </mxCell>
         <mxCell id="llPc_HmlTpIFPcBkZiys-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="llPc_HmlTpIFPcBkZiys-41" target="llPc_HmlTpIFPcBkZiys-30">
           <mxGeometry relative="1" as="geometry" />
