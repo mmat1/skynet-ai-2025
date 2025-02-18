@@ -1,48 +1,45 @@
 <mxfile host="65bd71144e">
     <diagram id="R0IU-kuzwGd0edn5YRvD" name="Expert Refinement">
-        <mxGraphModel dx="2587" dy="787" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="2620" dy="1574" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="49" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="-90" y="850" width="1600" height="710" as="geometry"/>
-                </mxCell>
                 <mxCell id="50" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;AI Response&lt;br&gt;Feedback(Where Experts don&#39;t agree with AI grading)&lt;br&gt;&lt;/span&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="1" vertex="1">
-                    <mxGeometry x="700" y="1330" width="170" height="140" as="geometry"/>
+                    <mxGeometry x="720" y="450" width="170" height="140" as="geometry"/>
                 </mxCell>
                 <mxCell id="51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="52" target="54" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="52" value="Pompt Orchestrator" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-                    <mxGeometry x="90" y="960" width="140" height="140" as="geometry"/>
+                    <mxGeometry x="110" y="80" width="140" height="140" as="geometry"/>
                 </mxCell>
                 <mxCell id="53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="54" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="530" y="1030" as="targetPoint"/>
+                        <mxPoint x="550" y="150" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="54" value="LLM" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-                    <mxGeometry x="310" y="960" width="140" height="140" as="geometry"/>
+                    <mxGeometry x="330" y="80" width="140" height="140" as="geometry"/>
                 </mxCell>
                 <mxCell id="55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="56" target="52" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="56" value="Chunk Data" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-                    <mxGeometry x="60" y="1160" width="100" height="100" as="geometry"/>
+                    <mxGeometry x="80" y="280" width="100" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="58" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="810" y="1030" as="targetPoint"/>
+                        <mxPoint x="830" y="150" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="58" value="Summary" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-                    <mxGeometry x="530" y="970" width="120" height="120" as="geometry"/>
+                    <mxGeometry x="550" y="90" width="120" height="120" as="geometry"/>
                 </mxCell>
                 <mxCell id="59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="60" target="63" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="60" value="Admin UI" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-                    <mxGeometry x="470" y="1420" width="80" height="80" as="geometry"/>
+                    <mxGeometry x="490" y="540" width="80" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="63" target="50" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -51,28 +48,28 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="63" value="Pull Feedback" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-                    <mxGeometry x="470" y="1220" width="80" height="80" as="geometry"/>
+                    <mxGeometry x="490" y="340" width="80" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="65" target="56" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="65" value="Compression" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-                    <mxGeometry x="240" y="1220" width="80" height="80" as="geometry"/>
+                    <mxGeometry x="260" y="340" width="80" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="67" target="69" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="67" value="Designated Expert Review&amp;nbsp;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-                    <mxGeometry x="810" y="970" width="120" height="120" as="geometry"/>
+                    <mxGeometry x="830" y="90" width="120" height="120" as="geometry"/>
                 </mxCell>
                 <mxCell id="68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="69" target="70" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="69" value="Question/Answer Update&amp;nbsp;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-                    <mxGeometry x="1010" y="970" width="120" height="120" as="geometry"/>
+                    <mxGeometry x="1030" y="90" width="120" height="120" as="geometry"/>
                 </mxCell>
                 <mxCell id="70" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;RAW ANSWER KEY / QUESTION DATABASE&amp;nbsp;&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;(Data Store, unspecified)&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="1" vertex="1">
-                    <mxGeometry x="1280" y="965" width="120" height="130" as="geometry"/>
+                    <mxGeometry x="1300" y="85" width="120" height="130" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
