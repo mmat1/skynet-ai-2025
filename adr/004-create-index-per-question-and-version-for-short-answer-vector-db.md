@@ -46,20 +46,20 @@ The SoftArchCert system requires an efficient and scalable indexing strategy for
 
 ### Single Index for All Questions and Versions:
 
-**Pros**: Simplifies the indexing structure.
-**Cons**: Requires rebuilding the entire index for any changes, leading to high maintenance costs and potential performance issues.
+- **Pros**: Simplifies the indexing structure.
+- **Cons**: Requires rebuilding the entire index for any changes, leading to high maintenance costs and potential performance issues.
 
 ### Index per Question with All Versions:
 
-**Pros**: Allows for version management within a single index.
-**Cons**: Can lead to large index sizes and complexity in managing multiple versions within the same index.
+- **Pros**: Allows for version management within a single index.
+- **Cons**: Can lead to large index sizes and complexity in managing multiple versions within the same index.
 
 ### Index per Question and Version:
 
-**Pros**: Provides clear separation of versions, simplifies management, and allows for independent updates and deletions.
-**Cons**: Increases the number of indexes, which may lead to higher storage costs.
+- **Pros**: Provides clear separation of versions, simplifies management, and allows for independent updates and deletions.
+- **Cons**: Increases the number of indexes, which may lead to higher storage costs.
 
 ### Parent-Child Relationship for Questions and Versions:
 
-**Pros**: Reduces data duplication by storing common information at the parent level.
-**Cons**: Adds complexity in managing relationships and querying data.
+- **Pros**: Reduces data duplication by storing common information at the parent level.
+- **Cons**: Adds complexity in managing relationships and querying data.
