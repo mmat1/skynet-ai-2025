@@ -31,9 +31,10 @@
     - [AI Admin Case Studies feedback](#ai-admin-case-studies-feedback)
     - [AI Admin Expert Refinement of Aptitude Test](#ai-admin-expert-refinement-of-aptitude-test)
     - [Observability Dashboard](#observability-dashboard)
-- [Comprehensive Diagrams](#comprehensive-diagrams)
-  - [Admin Application](#admin-application)
-  - [Certification Application](#certification-application)
+  - [Comprehensive Diagrams](#comprehensive-diagrams)
+    - [System Overview](/system-overview.md)
+    - [Admin Application](#admin-application)
+    - [Certification Application](#certification-application)
 - [Architecture Decision Records](#architecture-decision-records)
 
 ## Overview
@@ -308,19 +309,19 @@ The Analytics Service connects to the following databases:
 7. **Architecture Grade and Feedback:** Stores the final grades and feedback for architecture case studies.
 8. **AI Response Feedback Database:** Stores feedback on AI grading added by the expert reviewers and gives the data for the AI grades which were corrected by the experts.
 
-## Comprehensive Diagrams
+### Comprehensive Diagrams
 
 Refer to the [System Overview](/system-overview.md) for additional details and information.
 
 Link to Icepanel diagram: https://s.icepanel.io/7x0vWrdHnLch4R/yBIc
 
-### Admin Application
+#### Admin Application
 
 <div align="center" style="text-align: center;">
    <img src="diagrams/architecture-admin-app-comprehensive-diagram.png" alt="Admin Application Comprehensive Diagram"/>
 </div>
 
-### Certification Application
+#### Certification Application
 
 <div align="center" style="text-align: center;">
    <img src="diagrams/architecture-certification-app-comprehensive-diagram.png" alt="Admin Application Comprehensive Diagram"/>

@@ -27,7 +27,7 @@ last_updated: 02/19/2025
 
 ## Decision
 
-- We have decided to store AI-graded candidate exams as a single record, merging the individually processed questions back together into a cohesive exam record. Refer to [ADR 008](/adr/008-LLM-will-evaluate-and-grade-one-question-at-a-time.md) for details on LLM evaluation and grading one question at a time.
+- We have decided to store AI-graded candidate exams as a single record, merging the individually processed questions back together into a cohesive exam record. Refer to [ADR 008](/adr/008-validate-prompts-before-sending-information-to-LLM-for-processing.md) for details on LLM evaluation and grading one question at a time.
 
 ## Consequences
 
