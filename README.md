@@ -326,7 +326,7 @@ Link to Icepanel diagram: https://s.icepanel.io/7x0vWrdHnLch4R/yBIc
    <img src="diagrams/architecture-certification-app-comprehensive-diagram.png" alt="Admin Application Comprehensive Diagram"/>
 </div>
 
-### Architecture Decision Records
+## Architecture Decision Records
 
 An Architecture Decision Record (ADR) is a document that captures an important architectural decision made along with its context and consequences. It helps teams keep track of the architectural history and rationale behind decisions, ensuring transparency and facilitating future maintenance and evolution of the system. The following template will be used for all ADRs; [ADR template](adr/000-adr-template.md)
 
