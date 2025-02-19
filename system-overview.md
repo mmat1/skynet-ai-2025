@@ -29,11 +29,10 @@ Please refer to the [business case and requirements](requirements.md) for reason
 
      1. AI Short Answer Auto Grader
      2. AI Case Study Auto Grader
-     3. AI Response Feedback Service
-     4. Case Study AI Pipeline Service
-     5. Exam Data AI Pipeline
-     6. AI Service for Short and Miltiple Answer Analysis
-     7. Question/Answer Data Pipeline AI Service
+     3. Case Study AI Pipeline Service
+     4. Exam Data AI Pipeline
+     5. AI Service for Short and Multiple Answer Analysis
+     6. Question/Answer Data Pipeline AI Service
 
 
 4. **Comprehensive Diagrams**
