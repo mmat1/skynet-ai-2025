@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="c8eGWL0HmQjvU35PgFL1" name="Bad Question Review">
-        <mxGraphModel dx="2066" dy="-2547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1844" dy="-2547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -104,7 +104,7 @@
                 <mxCell id="27" value="Prompt Orchestrator" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
                     <mxGeometry x="-359.00000000000006" y="3394" width="120" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="29" edge="1" target="32">
+                <mxCell id="28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="29" target="32" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="81" y="3464" as="targetPoint"/>
                     </mxGeometry>
