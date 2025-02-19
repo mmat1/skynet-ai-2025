@@ -9,7 +9,6 @@
 - Implement AI to grade short answer questions based on an answer key.
 - Provide candidates with an option to grade questions they are presented with for certification.
 
-
 ### AI-Driven Analysis and Recommendations (Email The Results)
 
 - Create a breakdown/analysis of test results using AI.
@@ -30,7 +29,7 @@
 - Implement observability features to provide details on AI review accuracy, bias. (Auditing AI reviews)
 - Make adjustments based on observations and feed them back into the model for continuous training.(Feed it back to vector DB)
 - Build observability features to monitor AI cost, and time reduction/improvements.(Dashboard for AI cost and Insights into ROI based on AI usage)
-- Performance, reliablity(SLA/SLO)?
+- Performance, reliability (SLA/SLO)?
 - Explainable AI()
 - Analyze reviews which have a conflict between AI review and expert reviews and provide suggestions.
 
