@@ -52,11 +52,11 @@
       - [AI Admin Case Studies feedback](#ai-admin-case-studies-feedback)
       - [AI Admin Expert Refinement of Aptitude Test](#ai-admin-expert-refinement-of-aptitude-test)
       - [Observability Dashboard](#observability-dashboard)
-  - [Dashboard Metrics](#dashboard-metrics)
-    - [Overall Reduction in Evaluation Time](#overall-reduction-in-evaluation-time)
-    - [Accuracy](#accuracy)
-    - [Performance](#performance)
-  - [Analytics Service Functions](#analytics-service-functions)
+        - [Dashboard Metrics](#dashboard-metrics)
+          - [Overall Reduction in Evaluation Time](#overall-reduction-in-evaluation-time)
+          - [Accuracy](#accuracy)
+          - [Performance](#performance)
+        - [Analytics Service Functions](#analytics-service-functions)
     - [Connected Databases](#connected-databases)
   - [**Comprehensive Diagrams**](#comprehensive-diagrams)
     - [Admin Application](#admin-application)
@@ -326,25 +326,25 @@ This diagram details the container-level architecture for handling AI grading er
 
 The Observability Dashboard helps review AI accuracy, performance, and the overall reduction in time taken to evaluate certification exams.
 
-## Dashboard Metrics
+##### Dashboard Metrics
 
-### Overall Reduction in Evaluation Time
+###### Overall Reduction in Evaluation Time
 
 - **Average Turnaround Time for Aptitude TDashboard Metrics
 Overall Reduction in Evaluation Time
 est Results:** Measures the average time taken to grade and return results for the aptitude test, which includes multiple-choice questions and short answers. This metric tracks the duration from when the candidate submits their exam to when the final grades are recorded in the database.
 - **Average Turnaround Time for Case Study Results:** Measures the average time taken to grade and return results for the architecture case studies.This metric tracks the duration from when the candidate submits their architecture for the case study to when the final grades and feedback are recorded in the database.
 
-### Accuracy
+###### Accuracy
 - **Percentage of Aptitude Tests Accurately Graded by AI Autograder:** Indicates the percentage of Aptitude Tests(short answers) accurately graded by the AI auto grader without requiring any corrections from the expert reviewer. 
 - **Percentage of Case Studies Accurately Graded by AI Autograder:** Indicates the percentage of case study architectures accurately graded by the AI auto grader without requiring any corrections from the expert reviewer. 
 
-### Performance
+###### Performance
 - **Average Grading Time for AI Autograder for a Short Answer:** Measures the average time taken by the AI Autograder to grade an individual short answer.
 - **Average Grading Time for AI Autograder for a Case Study:** Measures the average time taken by the AI Autograder to grade a case study.
 
 
-## Analytics Service Functions
+##### Analytics Service Functions
 - **Data Collection and Storage:** Connects to various databases to collect and store data related to aptitude tests, case studies, and feedback.
 - **Data Analysis:** Analyzes the collected data to generate insights on AI accuracy, performance, and evaluation time.
 - **Performance Monitoring:** Monitors key metrics such as average turnaround time, grading accuracy, and grading time for both aptitude tests and case studies.
