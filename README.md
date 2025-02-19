@@ -97,6 +97,28 @@ The architecture team will explore the following AI opportunities:
 
 ### Current Architecture
 
+#### Admin
+
+<div align="center" style="text-align: center;">
+   <img src="adr/images/Existing Administrative Architecture.drawio.png" alt="Admin Application"/>
+</div>
+
+#### Certification
+
+##### Case Study
+
+<div align="center" style="text-align: center;">
+   <img src="adr/images/Existing Certification Testing Architecture - Architecture Solution.drawio.png" alt="Existing Certification Testing Diagram"/>
+</div>
+
+##### Aptitude
+
+<div align="center" style="text-align: center;">
+   <img src="adr/images/Existing Certification Testing Architecture-Test1.drawio.png" alt="Existing Certification Testing Diagram"/>
+</div>
+
 ### Future Architecture
+
+
 
 ### Architecture Decisions Records
