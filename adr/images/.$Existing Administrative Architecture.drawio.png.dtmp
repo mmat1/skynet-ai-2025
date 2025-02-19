@@ -1,0 +1,112 @@
+<mxfile host="Electron" modified="2025-02-19T20:03:07.025Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.2 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="j7lRLp-oeTDDzR_1FZSS" version="22.0.2" type="device">
+  <diagram name="Page-1" id="_tufhZcVN9qis24Bj6ln">
+    <mxGraphModel dx="1434" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BURhxbBpFhUajFAk2L7Z-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="60" width="870" height="780" as="geometry" />
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-5" value="Admin API Gateway" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="280" width="760" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="fMiwKS6RCtV4HmQZGtE2-6" target="fMiwKS6RCtV4HmQZGtE2-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-6" value="User &lt;br&gt;Maintenance&lt;br&gt;Service" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="40" y="400" width="160" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-7" value="Expert Architect&lt;br&gt;Maintenance" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="60" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-8" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="90" y="700" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-9" value="Expert Profile&lt;br&gt;Db" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="70" y="770" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="fMiwKS6RCtV4HmQZGtE2-10" target="fMiwKS6RCtV4HmQZGtE2-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-10" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.devices.lcd_monitor;" parent="1" vertex="1">
+          <mxGeometry x="91" y="170" width="58" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-11" value="Company Admin&lt;br&gt;User Interface" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="64" y="120" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="fMiwKS6RCtV4HmQZGtE2-12" target="fMiwKS6RCtV4HmQZGtE2-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-33" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="fMiwKS6RCtV4HmQZGtE2-12" target="fMiwKS6RCtV4HmQZGtE2-21" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="445" y="260" />
+              <mxPoint x="520" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-34" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="fMiwKS6RCtV4HmQZGtE2-12" target="fMiwKS6RCtV4HmQZGtE2-26" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="194" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-12" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.devices.lcd_monitor;" parent="1" vertex="1">
+          <mxGeometry x="416" y="170" width="58" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-13" value="Expert Admin&lt;br&gt;User Interface" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="395" y="120" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="fMiwKS6RCtV4HmQZGtE2-16" target="fMiwKS6RCtV4HmQZGtE2-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-16" value="Aptitude Test&lt;br&gt;Maintenance&lt;br&gt;Service" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="240" y="400" width="160" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-17" value="Aptitude Test&lt;br&gt;Maintenance" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="260" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-18" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="290" y="700" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-19" value="Aptitude Test&lt;br&gt;Db" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="275" y="770" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="fMiwKS6RCtV4HmQZGtE2-21" target="fMiwKS6RCtV4HmQZGtE2-23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-21" value="Case Study&lt;br&gt;Maintenance&lt;br&gt;Service" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="440" y="400" width="160" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-22" value="Case Study&lt;br&gt;Maintenance" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="460" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-23" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="490" y="700" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-24" value="Case Study&lt;br&gt;Db" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="475" y="770" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="fMiwKS6RCtV4HmQZGtE2-26" target="fMiwKS6RCtV4HmQZGtE2-28" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-26" value="Aptitude Test&lt;br&gt;Analysis&lt;br&gt;Service" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="640" y="400" width="160" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-27" value="Aptitude Test&lt;br&gt;Reporting" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="660" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-28" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="690" y="700" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-29" value="Aptitude Test&lt;br&gt;Grade Db" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="675" y="770" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fMiwKS6RCtV4HmQZGtE2-30" value="Aptitude Test&lt;br&gt;Analysis" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="660" y="530" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
