@@ -1,0 +1,114 @@
+<mxfile host="Electron" modified="2025-02-19T20:08:20.601Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.2 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="a0KCyMs0KJPeELNbx1rE" version="22.0.2" type="device">
+  <diagram id="4uBAmS3qoOOtd3OAbmzM" name="AI Dashboard">
+    <mxGraphModel dx="4091" dy="1194" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fbhNhepu-XaNyhAZFpsD-17" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-920" y="700" width="1670" height="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;SLA/SLO Dashboard&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=right;" parent="1" vertex="1">
+          <mxGeometry x="-870" y="830" width="1470" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="lo2HcSz8DycYdTQS0Y0y-47" value="&lt;b&gt;&amp;nbsp;Overall Reduction in Evaluation Time&amp;nbsp;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;labelBackgroundColor=default;" parent="1" vertex="1">
+          <mxGeometry x="-850" y="895" width="450" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="lo2HcSz8DycYdTQS0Y0y-46" value="&lt;b&gt;Accuracy&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;labelBackgroundColor=default;" parent="1" vertex="1">
+          <mxGeometry x="-371" y="895" width="450" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="lo2HcSz8DycYdTQS0Y0y-45" value="&lt;b&gt;Performance&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;labelBackgroundColor=default;" parent="1" vertex="1">
+          <mxGeometry x="110" y="895" width="450" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="lo2HcSz8DycYdTQS0Y0y-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.18;entryY=0.976;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="4" target="12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Question/Answer Vector Database&lt;/b&gt;&lt;/span&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="1" vertex="1">
+          <mxGeometry x="-600" y="1520" width="120" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="lo2HcSz8DycYdTQS0Y0y-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.317;entryY=0.984;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-352" y="1520" as="sourcePoint" />
+            <mxPoint x="-350.3699999999999" y="1407.7599999999998" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-350" y="1520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;AI Graded Test 1 Database&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="1" vertex="1">
+          <mxGeometry x="-411" y="1520" width="120" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="lo2HcSz8DycYdTQS0Y0y-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.463;entryY=1.018;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="8" target="12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Expert Graded Database&lt;/b&gt;&lt;/span&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="1" vertex="1">
+          <mxGeometry x="-206" y="1515" width="120" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="lo2HcSz8DycYdTQS0Y0y-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-720" y="1500" as="sourcePoint" />
+            <mxPoint x="-720" y="1411" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10" value="&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Aptitude Test Ungraded Database&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+          <mxGeometry x="-790" y="1505" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="lo2HcSz8DycYdTQS0Y0y-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="12" target="13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Analytics Service&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-790" y="1270" width="1390" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="lo2HcSz8DycYdTQS0Y0y-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="15" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40" y="1410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Submission Ungraded Database&lt;/b&gt;&lt;/font&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="-14" y="1510" width="110" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="lo2HcSz8DycYdTQS0Y0y-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.732;entryY=1.018;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="17" target="12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;AI Graded Architecture Database&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+          <mxGeometry x="172" y="1510" width="110" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="lo2HcSz8DycYdTQS0Y0y-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="382.0588235294117" y="1518.9999999999998" as="sourcePoint" />
+            <mxPoint x="383" y="1409" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="382" y="1464" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lo2HcSz8DycYdTQS0Y0y-28" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&amp;nbsp;Architecture Grade and Feedback&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+          <mxGeometry x="327" y="1510" width="110" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="lo2HcSz8DycYdTQS0Y0y-32" value="Average Turnaround Time for Aptitude Test Results" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="-810" y="935" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="lo2HcSz8DycYdTQS0Y0y-33" value="Average Turnaround Time for Case Study Results" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="-600" y="935" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="lo2HcSz8DycYdTQS0Y0y-34" value="Percentage of Aptitude Tests Accurately Graded by AI Autograder" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="-320" y="925" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="lo2HcSz8DycYdTQS0Y0y-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.961;entryY=1.018;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="lo2HcSz8DycYdTQS0Y0y-35" target="12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lo2HcSz8DycYdTQS0Y0y-35" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;AI Response Feedback Database&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+          <mxGeometry x="490" y="1510" width="110" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="lo2HcSz8DycYdTQS0Y0y-41" value="Percentage of Case Studies Accurately Graded by AI Autograder" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="-100" y="930" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="lo2HcSz8DycYdTQS0Y0y-42" value="Average Grading Time for AI Autograder for a Short Answer" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="157" y="935" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="lo2HcSz8DycYdTQS0Y0y-43" value="Average Grading Time for AI Autograder for a Case Study" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="380" y="935" width="140" height="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
