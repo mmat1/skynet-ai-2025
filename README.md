@@ -8,60 +8,33 @@
 
 ## **Table of Contents**
 
-- [Skynet AI | O'Reilly Kata: Architecture \& AI (Winter 2025)](#skynet-ai--oreilly-kata-architecture--ai-winter-2025)
-  - [**Table of Contents**](#table-of-contents)
-  - [Overview](#overview)
-    - [About the project](#about-the-project)
-    - [Team Members](#team-members)
-    - [Deliverables](#deliverables)
-    - [Judges' Criteria](#judges-criteria)
-  - [About Certifiable, Inc](#about-certifiable-inc)
-    - [Certification Process](#certification-process)
-  - [Requirements](#requirements)
-    - [Functional Requirements](#functional-requirements)
-      - [AI Grading for Certification Tests (Aptitude Test)](#ai-grading-for-certification-tests-aptitude-test)
-      - [AI-Driven Analysis and Recommendations (Email The Results)](#ai-driven-analysis-and-recommendations-email-the-results)
-      - [AI Grading Confidence and Automation (Short Answer Review and Case Study Solution)](#ai-grading-confidence-and-automation-short-answer-review-and-case-study-solution)
-      - [AI Review and Feedback on Test Reports (Admin - Aptitude Test Analysis Report)](#ai-review-and-feedback-on-test-reports-admin---aptitude-test-analysis-report)
-      - [AI Observability](#ai-observability)
-      - [Feedback for New Case Studies/Aptitude tests](#feedback-for-new-case-studiesaptitude-tests)
-    - [Non-Functional Requirements](#non-functional-requirements)
-    - [Assumptions and Constraints](#assumptions-and-constraints)
-  - [Architecture and Design](#architecture-and-design)
-    - [Current Architecture](#current-architecture)
-      - [Admin](#admin)
-      - [Certification](#certification)
-        - [Case Study](#case-study)
-        - [Aptitude](#aptitude)
-    - [Future Architecture](#future-architecture)
-      - [AI Case Study Grader](#ai-case-study-grader)
-        - [1. Candidate Submission:](#1-candidate-submission)
-        - [2. Retrieval and Chunking:](#2-retrieval-and-chunking)
-        - [3. Embedding and Storage:](#3-embedding-and-storage)
-        - [4. Criteria Retrieval:](#4-criteria-retrieval)
-        - [5. AI Processing:](#5-ai-processing)
-        - [6. Expert Review:](#6-expert-review)
-        - [7. Final Grading and Notification:](#7-final-grading-and-notification)
-      - [AI Short Answer Grader](#ai-short-answer-grader)
-        - [1. Data Preparation:](#1-data-preparation)
-        - [2. Storage:](#2-storage)
-        - [3. Query Processing:](#3-query-processing)
-        - [4. Grading:](#4-grading)
-        - [5. Feedback:](#5-feedback)
-        - [6. Candidate Notification:](#6-candidate-notification)
-      - [AI Admin Case Studies feedback](#ai-admin-case-studies-feedback)
-      - [AI Admin Expert Refinement of Aptitude Test](#ai-admin-expert-refinement-of-aptitude-test)
-      - [Observability Dashboard](#observability-dashboard)
-        - [1. Dashboard Metrics](#1-dashboard-metrics)
-          - [Overall Reduction in Evaluation Time](#overall-reduction-in-evaluation-time)
-          - [Accuracy](#accuracy)
-          - [Performance](#performance)
-      - [2. Analytics Service Functions](#2-analytics-service-functions)
-      - [3. Connected Databases](#3-connected-databases)
-  - [**Comprehensive Diagrams**](#comprehensive-diagrams)
+- [Overview](#overview)
+  - [About the project](#about-the-project)
+  - [Team Members](#team-members)
+  - [Deliverables](#deliverables)
+  - [Judges' Criteria](#judges-criteria)
+- [About Certifiable, Inc](#about-certifiable-inc)
+  - [Certification Process](#certification-process)
+- [Requirements](#requirements)
+  - [Functional Requirements](#functional-requirements)
+  - [Non-Functional Requirements](#non-functional-requirements)
+  - [Assumptions and Constraints](#assumptions-and-constraints)
+- [Architecture and Design](#architecture-and-design)
+  - [Current Architecture](#current-architecture)
     - [Admin Application](#admin-application)
-    - [Certification Application](#certification-application)
-    - [Architecture Decision Records](#architecture-decision-records)
+    - [Certification](#certification)
+      - [Case Study](#case-study)
+      - [Aptitude](#aptitude)
+  - [Future Architecture](#future-architecture)
+    - [AI Case Study Grader](#ai-case-study-grader)
+    - [AI Short Answer Grader](#ai-short-answer-grader)
+    - [AI Admin Case Studies feedback](#ai-admin-case-studies-feedback)
+    - [AI Admin Expert Refinement of Aptitude Test](#ai-admin-expert-refinement-of-aptitude-test)
+    - [Observability Dashboard](#observability-dashboard)
+- [Comprehensive Diagrams](#comprehensive-diagrams)
+  - [Admin Application](#admin-application)
+  - [Certification Application](#certification-application)
+- [Architecture Decision Records](#architecture-decision-records)
 
 ## Overview
 
@@ -113,38 +86,37 @@ Certifiable Inc.'s certification process involves two main tests:
 
 ### Functional Requirements
 
-#### AI Grading for Certification Tests (Aptitude Test)
+- **AI Grading for Certification Tests (Aptitude Test)**
 
-- Implement AI to grade short answer questions based on an answer key.
-- Provide candidates with an option to grade questions they are presented with for certification.
+  - Implement AI to grade short answer questions based on an answer key.
+  - Provide candidates with an option to grade questions they are presented with for certification.
 
-#### AI-Driven Analysis and Recommendations (Email The Results)
+- **AI-Driven Analysis and Recommendations (Email The Results)**
 
-- Create a breakdown/analysis of test results using AI.
+  - Create a breakdown/analysis of test results using AI.
 
-#### AI Grading Confidence and Automation (Short Answer Review and Case Study Solution)
+- **AI Grading Confidence and Automation (Short Answer Review and Case Study Solution)**
 
-- Implement AI grading with a confidence level value.
-- Allow for quick expert review of AI-graded results based on confidence levels.
-- Enable fully automated grading for high-confidence results, setting a threshold for automation.
+  - Implement AI grading with a confidence level value.
+  - Allow for quick expert review of AI-graded results based on confidence levels.
+  - Enable fully automated grading for high-confidence results, setting a threshold for automation.
 
-#### AI Review and Feedback on Test Reports (Admin - Aptitude Test Analysis Report)
+- **AI Review and Feedback on Test Reports (Admin - Aptitude Test Analysis Report)**
 
-- Use AI to review test reports and provide summaries with feedback on question relevance.
-- Analyze both multiple-choice and short answer questions.
+  - Use AI to review test reports and provide summaries with feedback on question relevance.
+  - Analyze both multiple-choice and short answer questions.
 
-#### AI Observability
+- **AI Observability**
 
-- Implement observability features to provide details on AI review accuracy, test evaluation time and AI grading performance. (Auditing AI reviews)
-- Make adjustments based on observations and feed them back into the model for continuous training. (Feed it back to vector DB)
-- Build observability features to monitor AI cost, and time reduction/improvements. (Dashboard for AI cost and Insights into ROI based on AI usage)
-- Analyze reviews which have a conflict between AI review and expert reviews and provide suggestions.
+  - Implement observability features to provide details on AI review accuracy, test evaluation time and AI grading performance. (Auditing AI reviews)
+  - Make adjustments based on observations and feed them back into the model for continuous training. (Feed it back to vector DB)
+  - Build observability features to monitor AI cost, and time reduction/improvements. (Dashboard for AI cost and Insights into ROI based on AI usage)
+  - Analyze reviews which have a conflict between AI review and expert reviews and provide suggestions.
 
-#### Feedback for New Case Studies/Aptitude tests
-
-- Gather feedback on expert accuracy from analyzed aptitude test reports and have AI analyze the feedback and provide summary.
-- Allow designated experts to send out surveys to other experts for feedback on new case studies.
-- Use AI to review and summarize the feedback, aiding in the creation and modification of case studies.
+- **Feedback for New Case Studies/Aptitude tests**
+  - Gather feedback on expert accuracy from analyzed aptitude test reports and have AI analyze the feedback and provide summary.
+  - Allow designated experts to send out surveys to other experts for feedback on new case studies.
+  - Use AI to review and summarize the feedback, aiding in the creation and modification of case studies.
 
 ### Non-Functional Requirements
 
@@ -172,7 +144,7 @@ Certifiable Inc. faces several challenges due to the anticipated increase in cer
 
 ### Current Architecture
 
-#### Admin
+#### Admin Application
 
 <div align="left" style="text-align: left;">
    <img src="adr/images/Existing Administrative Architecture.drawio.png" alt="Admin Application"/>
@@ -202,39 +174,26 @@ Certifiable Inc. faces several challenges due to the anticipated increase in cer
 
 The AI Case Study Grader solution creates a comprehensive and efficient process for grading case study submissions using AI, with expert review and feedback integrated into the workflow.
 
-##### 1. Candidate Submission:
-
-- The candidate submits their architecture solution through the candidate UI.
-- The submission is stored in the Submission Ungraded Database.
-
-##### 2. Retrieval and Chunking:
-
-- The submitted data is retrieved from the ungraded database.
-- The data is chunked to reduce the amount of data and improve processing efficiency.
-
-##### 3. Embedding and Storage:
-
-- The chunked data is embedded and stored in a vector database for efficient searching and comparison.
-
-##### 4. Criteria Retrieval:
-
-- The detailed evaluation criteria for the case study in the form of a rubric is retrieved from the Case Study and Criteria Database.
-
-##### 5. AI Processing:
-
-- A a prompt orchestration layer will handle user queries and generate prompts for the LLM. The LLM will process the prompts and generate responses.
-- The AI processes the candidate's submission by comparing it against the evaluation criteria in the form of a rubric and evaluates how well the submission meets the criteria and provides a detailed analysis.
-
-##### 6. Expert Review:
-
-- If the AI's evaluation does not meet a certain accuracy threshold set in the evaluation criteria, the submission is sent for expert review.
-- The expert reviews the AI's analysis and provides additional feedback if necessary.
-
-##### 7. Final Grading and Notification:
-
-- The final graded submission is stored in the Architecture Grade and Feedback Database.
-- Notifications are sent to the candidate regarding their results through the Candidate Architecture Notification Service, including summaries of the feedback data highlighting areas for improvement and providing insights into the overall performance of the candidate.
-- Test results are also stored in the Certification Database and can be accessed through the Candidate Viewer UI.
+1. **Candidate Submission**
+   - The candidate submits their architecture solution through the candidate UI.
+   - The submission is stored in the Submission Ungraded Database.
+2. **Retrieval and Chunking**
+   - The submitted data is retrieved from the ungraded database.
+   - The data is chunked to reduce the amount of data and improve processing efficiency.
+3. **Embedding and Storage**
+   - The chunked data is embedded and stored in a vector database for efficient searching and comparison.
+4. **Criteria Retrieval**
+   - The detailed evaluation criteria for the case study in the form of a rubric is retrieved from the Case Study and Criteria Database.
+5. **AI Processing**
+   - A a prompt orchestration layer will handle user queries and generate prompts for the LLM. The LLM will process the prompts and generate responses.
+   - The AI processes the candidate's submission by comparing it against the evaluation criteria in the form of a rubric and evaluates how well the submission meets the criteria and provides a detailed analysis.
+6. **Expert Review**
+   - If the AI's evaluation does not meet a certain accuracy threshold set in the evaluation criteria, the submission is sent for expert review.
+   - The expert reviews the AI's analysis and provides additional feedback if necessary.
+7. **Final Grading and Notification**
+   - The final graded submission is stored in the Architecture Grade and Feedback Database.
+   - Notifications are sent to the candidate regarding their results through the Candidate Architecture Notification Service, including summaries of the feedback data highlighting areas for improvement and providing insights into the overall performance of the candidate.
+   - Test results are also stored in the Certification Database and can be accessed through the Candidate Viewer UI.
 
 #### AI Short Answer Grader
 
@@ -244,35 +203,24 @@ The AI Case Study Grader solution creates a comprehensive and efficient process 
 
 The AI Short Answer Grader solution leverages chunking, embedding, and vector databases to efficiently process and grade short answers, ensuring accurate and meaningful feedback for candidates.
 
-##### 1. Data Preparation:
-
-- **Chunking**: Large documents are split into smaller, manageable chunks to facilitate efficient processing and embedding. This involves specifying chunk sizes and overlaps to ensure meaningful segmentation.
-- **Embedding**: Each chunk is converted into a high-dimensional vector using an embedding model, capturing the semantic meaning of the chunk. This process involves using models like BERT or GPT to generate embeddings.
-
-##### 2. Storage:
-
-- **Vector Database**: The embeddings and corresponding chunk data are stored in a vector database. This database is designed to handle high-dimensional vectors efficiently and supports fast similarity searches.
-  - In this solution, the database is used to store both the raw data and the embeddings, allowing for efficient indexing and retrieval.
-
-##### 3. Query Processing:
-
-- **Embedding Candidate Answers**: When a candidate submits an answer, it is converted into an embedding using the same model used for the answer key. This ensures consistency in the representation of the data.
-- **Similarity Search**: The candidate's embedding is compared against the stored embeddings in the vector database to find the most similar chunks. This involves using algorithms like cosine similarity to measure the closeness of the embeddings.
-
-##### 4. Grading:
-
-- **Retrieval of Relevant Chunks**: The top N most similar chunks are retrieved from the vector database. These chunks represent the most relevant parts of the answer key that match the candidate's answer.
-- **LLM Evaluation**: The retrieved chunks, along with the candidate's answer and the original question, are passed to a large language model (LLM) for evaluation. The LLM assesses the similarity and provides a grade, along with feedback if necessary.
-
-##### 5. Feedback:
-
-- **Meaningful Feedback**: The LLM provides detailed feedback on the candidate's answer, highlighting areas of improvement or confirming correctness. This feedback is based on the comparison of the candidate's answer with the retrieved chunks from the answer key. The feedback is personalized for each candidate, including their answer, what parts of the answer were correct or incorrect, and potential areas of improvement. This ensures that the feedback is relevant and meaningful to the candidate.
-- **Feedback Review**: The expert software architects will access the feedback data, which includes the candidate's answer, the relevant chunks from the answer key, and the LLM's evaluation and feedback. They will analyze the feedback to understand the LLM's assessment. They will look at the specific points highlighted by the LLM, such as areas where the candidate's answer was correct or needed improvement, then validate the LLM's feedback by cross-referencing it with the answer key and their own knowledge. They will ensure that the feedback is accurate and aligns with the grading criteria.
-
-##### 6. Candidate Notification:
-
-- **Formatting**: The feedback is formatted in a clear and understandable manner, making it easy for the candidate to comprehend the evaluation and areas of improvement.
-- **Timely Delivery**: The feedback is delivered in a timely manner, ensuring that candidates receive it promptly after the expert review process.
+1. **Data Preparation**
+   - **Chunking**: Large documents are split into smaller, manageable chunks to facilitate efficient processing and embedding. This involves specifying chunk sizes and overlaps to ensure meaningful segmentation.
+   - **Embedding**: Each chunk is converted into a high-dimensional vector using an embedding model, capturing the semantic meaning of the chunk. This process involves using models like BERT or GPT to generate embeddings.
+2. **Storage**
+   - **Vector Database**: The embeddings and corresponding chunk data are stored in a vector database. This database is designed to handle high-dimensional vectors efficiently and supports fast similarity searches.
+     - In this solution, the database is used to store both the raw data and the embeddings, allowing for efficient indexing and retrieval.
+3. **Query Processing**
+   - **Embedding Candidate Answers**: When a candidate submits an answer, it is converted into an embedding using the same model used for the answer key. This ensures consistency in the representation of the data.
+   - **Similarity Search**: The candidate's embedding is compared against the stored embeddings in the vector database to find the most similar chunks. This involves using algorithms like cosine similarity to measure the closeness of the embeddings.
+4. **Grading**
+   - **Retrieval of Relevant Chunks**: The top N most similar chunks are retrieved from the vector database. These chunks represent the most relevant parts of the answer key that match the candidate's answer.
+   - **LLM Evaluation**: The retrieved chunks, along with the candidate's answer and the original question, are passed to a large language model (LLM) for evaluation. The LLM assesses the similarity and provides a grade, along with feedback if necessary.
+5. **Feedback**
+   - **Meaningful Feedback**: The LLM provides detailed feedback on the candidate's answer, highlighting areas of improvement or confirming correctness. This feedback is based on the comparison of the candidate's answer with the retrieved chunks from the answer key. The feedback is personalized for each candidate, including their answer, what parts of the answer were correct or incorrect, and potential areas of improvement. This ensures that the feedback is relevant and meaningful to the candidate.
+   - **Feedback Review**: The expert software architects will access the feedback data, which includes the candidate's answer, the relevant chunks from the answer key, and the LLM's evaluation and feedback. They will analyze the feedback to understand the LLM's assessment. They will look at the specific points highlighted by the LLM, such as areas where the candidate's answer was correct or needed improvement, then validate the LLM's feedback by cross-referencing it with the answer key and their own knowledge. They will ensure that the feedback is accurate and aligns with the grading criteria.
+6. **Candidate Notification**
+   - **Formatting**: The feedback is formatted in a clear and understandable manner, making it easy for the candidate to comprehend the evaluation and areas of improvement.
+   - **Timely Delivery**: The feedback is delivered in a timely manner, ensuring that candidates receive it promptly after the expert review process.
 
 #### AI Admin Case Studies feedback
 
@@ -280,7 +228,7 @@ The AI Short Answer Grader solution leverages chunking, embedding, and vector da
    <img src="diagrams/admin-case-study-feedback-ai.drawio.png" alt="Admin Case Study Feedback AI"/>
 </div>
 
-This diagram details the container-level architecture for handling feedback from experts on the case studies.  The Designated Expert uses the feedback to update the case studies.
+This diagram details the container-level architecture for handling feedback from experts on the case studies. The Designated Expert uses the feedback to update the case studies.
 
 1. **Chunk**: Breaks down data into manageable chunks for processing by Prompt Orchestrator and LLM.
 2. **Prompt Orchestrator**: It organizes and manages prompts for the LLM. Takes the compressed case studies and asks for LLM to summarize the content.
@@ -309,14 +257,13 @@ This diagram details the container-level architecture for handling AI grading er
 4. **Aptitude Test Database**: Stores data related to aptitude tests.
 5. **Aptitude Test Grade Database**: Stores grades for aptitude tests.
 6. **Aptitude Test Analysis Service**: This service provides analysis of Aptitude Tests.
-7. **AI Service for Short & Multiple Answer Analysis**: Analyzes short answers and multiple-choice responses, feeding back into Aptitude Test Analysis Service or pulling feedback from AI Response Feedback Database.  Additionally pulls feedback from Aptitude Test Grade Database for questions and answers that were failed by 95% of candidates.
+7. **AI Service for Short & Multiple Answer Analysis**: Analyzes short answers and multiple-choice responses, feeding back into Aptitude Test Analysis Service or pulling feedback from AI Response Feedback Database. Additionally pulls feedback from Aptitude Test Grade Database for questions and answers that were failed by 95% of candidates.
 8. **Summary**: Summarized output from LLM on why the candidate answers were wrong for the question and answer provided as the context.
 9. **LLM (Large Language Model)**: Processes information and provides language-based analysis or responses.
 10. **Prompt Orchestrator**: Manages prompts for LLM. Provides to LLM the following context: Aptitude Test Question & Answer and the candidate's answer; and then asks LLM to provide feedback on what could be changed in the question and answer to help candidates' answers.
 11. **Chunk Data**: Breaks down data into manageable chunks for processing by Prompt Orchestrator and LLM.
 12. **AI Response Feedback Database**: Stores feedback pulled by Chunk Data to improve AI responses.
 13. **Compression**: Compresses data before sending it to AI Service for Short & Multiple Answer Analysis.
-
 
 #### Observability Dashboard
 
@@ -326,31 +273,32 @@ This diagram details the container-level architecture for handling AI grading er
 
 The Observability Dashboard helps review AI accuracy, performance, and the overall reduction in time taken to evaluate certification exams.
 
-##### 1. Dashboard Metrics
+##### Dashboard Metrics
 
-###### Overall Reduction in Evaluation Time
+1. **Overall Reduction in Evaluation Time**
 
-- **Average Turnaround Time for Aptitude TDashboard Metrics
-Overall Reduction in Evaluation Time
-est Results:** Measures the average time taken to grade and return results for the aptitude test, which includes multiple-choice questions and short answers. This metric tracks the duration from when the candidate submits their exam to when the final grades are recorded in the database.
-- **Average Turnaround Time for Case Study Results:** Measures the average time taken to grade and return results for the architecture case studies.This metric tracks the duration from when the candidate submits their architecture for the case study to when the final grades and feedback are recorded in the database.
+   - Average Turnaround Time for Aptitude Dashboard Metrics Overall Reduction in Evaluation Time Test Results: Measures the average time taken to grade and return results for the aptitude test, which includes multiple-choice questions and short answers. This metric tracks the duration from when the candidate submits their exam to when the final grades are recorded in the database.
+   - **Average Turnaround Time for Case Study Results:** Measures the average time taken to grade and return results for the architecture case studies.This metric tracks the duration from when the candidate submits their architecture for the case study to when the final grades and feedback are recorded in the database.
 
-###### Accuracy
-- **Percentage of Aptitude Tests Accurately Graded by AI Autograder:** Indicates the percentage of Aptitude Tests(short answers) accurately graded by the AI auto grader without requiring any corrections from the expert reviewer. 
-- **Percentage of Case Studies Accurately Graded by AI Autograder:** Indicates the percentage of case study architectures accurately graded by the AI auto grader without requiring any corrections from the expert reviewer. 
+2. **Accuracy**
 
-###### Performance
-- **Average Grading Time for AI Autograder for a Short Answer:** Measures the average time taken by the AI Autograder to grade an individual short answer.
-- **Average Grading Time for AI Autograder for a Case Study:** Measures the average time taken by the AI Autograder to grade a case study.
+   - **Percentage of Aptitude Tests Accurately Graded by AI Autograder:** Indicates the percentage of Aptitude Tests(short answers) accurately graded by the AI auto grader without requiring any corrections from the expert reviewer.
+   - **Percentage of Case Studies Accurately Graded by AI Autograder:** Indicates the percentage of case study architectures accurately graded by the AI auto grader without requiring any corrections from the expert reviewer.
 
+3. **Performance**
+   - **Average Grading Time for AI Autograder for a Short Answer:** Measures the average time taken by the AI Autograder to grade an individual short answer.
+   - **Average Grading Time for AI Autograder for a Case Study:** Measures the average time taken by the AI Autograder to grade a case study.
 
-####  2. Analytics Service Functions
-- **Data Collection and Storage:** Connects to various databases to collect and store data related to aptitude tests, case studies, and feedback.
-- **Data Analysis:** Analyzes the collected data to generate insights on AI accuracy, performance, and evaluation time.
-- **Performance Monitoring:** Monitors key metrics such as average turnaround time, grading accuracy, and grading time for both aptitude tests and case studies.
+##### Analytics Service Functions
 
-#### 3. Connected Databases
+1. **Data Collection and Storage:** Connects to various databases to collect and store data related to aptitude tests, case studies, and feedback.
+2. **Data Analysis:** Analyzes the collected data to generate insights on AI accuracy, performance, and evaluation time.
+3. **Performance Monitoring:** Monitors key metrics such as average turnaround time, grading accuracy, and grading time for both aptitude tests and case studies.
+
+##### Connected Databases
+
 The Analytics Service connects to the following databases:
+
 1. **Aptitude Test Ungraded Database:** Stores ungraded aptitude test submissions.
 2. **Question/Answer Vector Database:** Stores vector representations of questions and answers.
 3. **AI Graded Test 1 Database:** Stores results of aptitude tests graded by the AI.
@@ -360,9 +308,11 @@ The Analytics Service connects to the following databases:
 7. **Architecture Grade and Feedback:** Stores the final grades and feedback for architecture case studies.
 8. **AI Response Feedback Database:** Stores feedback on AI grading added by the expert reviewers and gives the data for the AI grades which were corrected by the experts.
 
-## **Comprehensive Diagrams**
+## Comprehensive Diagrams
 
-Icepanel : https://s.icepanel.io/7x0vWrdHnLch4R/yBIc
+Refer to the [System Overview](/system-overview.md) for additional details and information.
+
+Link to Icepanel diagram: https://s.icepanel.io/7x0vWrdHnLch4R/yBIc
 
 ### Admin Application
 
