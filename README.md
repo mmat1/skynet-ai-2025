@@ -171,7 +171,7 @@ Certifiable Inc. faces several challenges due to the anticipated increase in cer
 
 #### Admin
 
-<div align="center" style="text-align: center;">
+<div align="left" style="text-align: left;">
    <img src="adr/images/Existing Administrative Architecture.drawio.png" alt="Admin Application"/>
 </div>
 
@@ -179,13 +179,13 @@ Certifiable Inc. faces several challenges due to the anticipated increase in cer
 
 ##### Case Study
 
-<div align="center" style="text-align: center;">
+<div align="left" style="text-align: left;">
    <img src="adr/images/Existing Certification Testing Architecture - Architecture Solution.drawio.png" alt="Existing Certification Testing Diagram"/>
 </div>
 
 ##### Aptitude
 
-<div align="center" style="text-align: center;">
+<div align="left" style="text-align: left;">
    <img src="adr/images/Existing Certification Testing Architecture-Test1.drawio.png" alt="Existing Certification Testing Diagram"/>
 </div>
 
