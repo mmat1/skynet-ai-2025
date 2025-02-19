@@ -1,0 +1,198 @@
+<mxfile host="Electron" modified="2025-02-19T23:16:46.506Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.2 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="y0uq56gEOSvqQslflxj8" version="22.0.2" type="device">
+  <diagram name="Page-1" id="pN41IXEbbVA8TANK2ag3">
+    <mxGraphModel dx="6849" dy="5994" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4800" pageHeight="4800" background="#ffffff" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Z2sne8tpgmStP3V4QoxZ-2" value="" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=top;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="-720" y="-380" width="2210" height="1260" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-10" value="Public API Gateway" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;glass=0;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="-380" y="76" width="1499" height="99" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-41" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;labelBackgroundColor=none;fontColor=default;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" source="6BxkRlzcPOb7OIVzYibj-12" target="6BxkRlzcPOb7OIVzYibj-39" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-12" value="Candidate Registration Service" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;align=center;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="-371" y="247" width="298" height="318" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-13" value="Candidate Registration" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="-324" y="356" width="194" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-48" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;labelBackgroundColor=none;fontColor=default;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" source="6BxkRlzcPOb7OIVzYibj-43" target="6BxkRlzcPOb7OIVzYibj-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-50" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.023;entryY=0.354;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;labelBackgroundColor=none;fontColor=default;exitX=1.008;exitY=0.149;exitDx=0;exitDy=0;exitPerimeter=0;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" source="6BxkRlzcPOb7OIVzYibj-15" target="6BxkRlzcPOb7OIVzYibj-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-51" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;labelBackgroundColor=none;fontColor=default;exitX=1;exitY=0.75;exitDx=0;exitDy=0;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" source="6BxkRlzcPOb7OIVzYibj-15" target="6BxkRlzcPOb7OIVzYibj-23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-15" value="Aptitude Test Taker" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;align=center;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="19" y="250" width="282" height="312" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-16" value="Test Loader" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="65" y="292" width="212" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-17" value="Question Sender" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="60" y="352" width="212" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-18" value="Answrer Capture" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="60" y="413" width="212" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-19" value="Test Timer" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="60" y="476" width="212" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-53" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;labelBackgroundColor=none;fontColor=default;exitX=0.993;exitY=0.341;exitDx=0;exitDy=0;exitPerimeter=0;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" source="6BxkRlzcPOb7OIVzYibj-20" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="643.5882352941176" y="293.2941176470588" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-20" value="Aptitude Manual Capture" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;align=center;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="417" y="253" width="134" height="127" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-21" value="Short Answer" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="434.5" y="315" width="88" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-54" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=52.5;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;labelBackgroundColor=none;fontColor=default;exitX=1.017;exitY=0.604;exitDx=0;exitDy=0;exitPerimeter=0;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" source="6BxkRlzcPOb7OIVzYibj-23" target="6BxkRlzcPOb7OIVzYibj-45" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-23" value="Aptitude Auto Grader" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;align=center;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="415.5" y="419" width="135.5" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-24" value="Multiple Choice" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="433.5" y="466" width="88" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-56" style="edgeStyle=none;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=1;entryDx=0;entryDy=-15;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;exitX=0.5;exitY=1;exitDx=0;exitDy=0;labelBackgroundColor=none;fontColor=default;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" source="6BxkRlzcPOb7OIVzYibj-25" target="6BxkRlzcPOb7OIVzYibj-45" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="882" y="508" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-57" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.052;entryY=0.648;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;labelBackgroundColor=none;fontColor=default;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" source="6BxkRlzcPOb7OIVzYibj-25" target="6BxkRlzcPOb7OIVzYibj-27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-58" style="edgeStyle=none;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;labelBackgroundColor=none;fontColor=default;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" target="6BxkRlzcPOb7OIVzYibj-26" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="920" y="460" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="920" y="527" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-25" value="Aptitude Manual Grader" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;align=center;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="815" y="241" width="134" height="212" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-67" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;labelBackgroundColor=none;fontColor=default;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" source="6BxkRlzcPOb7OIVzYibj-26" target="6BxkRlzcPOb7OIVzYibj-66" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-26" value="Candidate Aptitude Notification" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;align=center;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="998" y="453" width="120" height="148" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-65" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=52.5;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;labelBackgroundColor=none;fontColor=default;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" source="6BxkRlzcPOb7OIVzYibj-27" target="6BxkRlzcPOb7OIVzYibj-63" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-27" value="Candidate Status Service" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;align=center;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="1002" y="250" width="120" height="148" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-35" value="Short Answer" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="823" y="299" width="96" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-36" value="Grade Consolidation" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="827" y="371" width="100" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-37" value="Candidate Progress" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="1014" y="310.5" width="96" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-38" value="Candidate Aptitude Results" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="1010.5" y="526" width="95" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-6" style="edgeStyle=none;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;entryX=0.657;entryY=0.012;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=none;fontColor=default;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" source="6BxkRlzcPOb7OIVzYibj-68" target="6BxkRlzcPOb7OIVzYibj-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="87" y="-135" as="sourcePoint" />
+            <mxPoint x="-29" y="57" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-175" y="-66" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-39" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontSize=16;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="-269" y="647" width="89" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-40" value="&lt;div&gt;Candidate Database&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="-248" y="777" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-62" style="edgeStyle=none;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;labelBackgroundColor=none;fontColor=default;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" source="6BxkRlzcPOb7OIVzYibj-43" target="6BxkRlzcPOb7OIVzYibj-23" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="485" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-43" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontSize=16;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="114" y="643" width="89" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-55" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;labelBackgroundColor=none;fontColor=default;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" source="6BxkRlzcPOb7OIVzYibj-44" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="810" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-44" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontSize=16;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="645" y="250" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-71" style="edgeStyle=none;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" source="6BxkRlzcPOb7OIVzYibj-45" target="6BxkRlzcPOb7OIVzYibj-26" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="675" y="770" />
+              <mxPoint x="1060" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-45" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontSize=16;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="645" y="443" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-46" value="&lt;div&gt;Aptitude Test Ungraded&lt;/div&gt;&lt;div&gt;Database&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="645" y="355" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-47" value="&lt;div&gt;Aptitude Test Grade&lt;/div&gt;&lt;div&gt;Database&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="645" y="556" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-49" value="Aptitude Test Database" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="104.5" y="790" width="111" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-60" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;labelBackgroundColor=none;fontColor=default;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" source="6BxkRlzcPOb7OIVzYibj-68" target="6BxkRlzcPOb7OIVzYibj-15" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="156.04757548032921" y="-74" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-63" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontSize=16;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="1258" y="272" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-64" value="&lt;div&gt;Candidate Status&lt;/div&gt;&lt;div&gt;Database&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=middle;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="1258" y="370" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-66" value="" style="sketch=0;outlineConnect=0;strokeColor=none;dashed=0;verticalLabelPosition=middle;verticalAlign=middle;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.email_2;labelBackgroundColor=none;fillColor=#000033;labelPosition=center;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="1249" y="502.5" width="78" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="Z2sne8tpgmStP3V4QoxZ-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" source="6BxkRlzcPOb7OIVzYibj-68" target="6BxkRlzcPOb7OIVzYibj-27" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="166" y="-220" />
+              <mxPoint x="1062" y="-220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-68" value="Candidate Testing&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;&quot;&gt;User Interface&lt;/span&gt;" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;outlineConnect=0;align=center;shape=mxgraph.office.devices.lcd_monitor;fontSize=16;labelBackgroundColor=none;fillColor=#001933;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="86.5" y="-130" width="159" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-70" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.622;entryY=0.017;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;strokeWidth=3;" parent="1" source="6BxkRlzcPOb7OIVzYibj-69" target="6BxkRlzcPOb7OIVzYibj-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6BxkRlzcPOb7OIVzYibj-69" value="&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;Expert Grading&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;User Interface&lt;/div&gt;" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;outlineConnect=0;align=center;shape=mxgraph.office.devices.lcd_monitor;fontSize=16;labelBackgroundColor=none;fillColor=#190033;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="815" y="-128" width="159" height="128" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
