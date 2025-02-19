@@ -193,7 +193,7 @@ Certifiable Inc. faces several challenges due to the anticipated increase in cer
 
 #### AI Admin Case Studies feedback
 
-<div align="center" style="text-align: center;">
+<div align="left" style="text-align: left;">
    <img src="diagrams/admin-case-study-feedback-ai.drawio.png" alt="Admin Case Study Feedback AI"/>
 </div>
 
@@ -214,7 +214,7 @@ This diagram details the container-level architecture for handling feedback from
 
 #### AI Admin Expert Refinement of Aptitude Test
 
-<div align="center" style="text-align: center;">
+<div align="left" style="text-align: left;">
    <img src="diagrams/admin-expert-ai-refinement.drawio.png" alt="Admin Expert AI Refinement"/>
 </div>
 
@@ -236,7 +236,7 @@ This diagram details the container-level architecture for handling AI grading er
 
 #### AI Case Study Grader Description
 
-<div align="center" style="text-align: center;">
+<div align="left" style="text-align: left;">
    <img src="diagrams/ai-case-study-auto-grader.drawio.png" alt="AI Case Study Auto Grader"/>
 </div>
 
@@ -278,7 +278,7 @@ The AI Case Study Grader solution creates a comprehensive and efficient process 
 
 #### AI Short Answer Grader Description
 
-<div align="center" style="text-align: center;">
+<div align="left" style="text-align: left;">
    <img src="diagrams/ai-short-answer-auto-grader.drawio.png" alt="AI Short Answer Auto Grader"/>
 </div>
 
@@ -316,7 +316,7 @@ The AI Short Answer Grader solution leverages chunking, embedding, and vector da
 
 #### Observability Dashboard
 
-<div align="center" style="text-align: center;">
+<div align="left" style="text-align: left;">
    <img src="diagrams/observability-dashboard.drawio.png" alt="AI Observabilty Dashboard"/>
 </div>
 
@@ -326,7 +326,9 @@ The Observability Dashboard helps review AI accuracy, performance, and the overa
 
 ### Overall Reduction in Evaluation Time
 
-- **Average Turnaround Time for Aptitude Test Results:** Measures the average time taken to grade and return results for the aptitude test, which includes multiple-choice questions and short answers. This metric tracks the duration from when the candidate submits their exam to when the final grades are recorded in the database.
+- **Average Turnaround Time for Aptitude TDashboard Metrics
+Overall Reduction in Evaluation Time
+est Results:** Measures the average time taken to grade and return results for the aptitude test, which includes multiple-choice questions and short answers. This metric tracks the duration from when the candidate submits their exam to when the final grades are recorded in the database.
 - **Average Turnaround Time for Case Study Results:** Measures the average time taken to grade and return results for the architecture case studies.This metric tracks the duration from when the candidate submits their architecture for the case study to when the final grades and feedback are recorded in the database.
 
 ### Accuracy
