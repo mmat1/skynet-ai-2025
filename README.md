@@ -58,6 +58,9 @@
     - [Performance](#performance)
   - [Analytics Service Functions](#analytics-service-functions)
     - [Connected Databases](#connected-databases)
+  - [**Comprehensive Diagrams**](#comprehensive-diagrams)
+    - [Admin Application](#admin-application)
+    - [Certification Application](#certification-application)
     - [Architecture Decision Records](#architecture-decision-records)
 
 ## Overview
@@ -356,6 +359,22 @@ The Analytics Service connects to the following databases:
 6. **AI Graded Architecture Database:** Stores results of architecture case studies graded by the AI.
 7. **Architecture Grade and Feedback:** Stores the final grades and feedback for architecture case studies.
 8. **AI Response Feedback Database:** Stores feedback on AI grading added by the expert reviewers and gives the data for the AI grades which were corrected by the experts.
+
+## **Comprehensive Diagrams**
+
+Icepanel : https://s.icepanel.io/7x0vWrdHnLch4R/yBIc
+
+### Admin Application
+
+<div align="center" style="text-align: center;">
+   <img src="diagrams/architecture-admin-app-comprehensive-diagram.png" alt="Admin Application Comprehensive Diagram"/>
+</div>
+
+### Certification Application
+
+<div align="center" style="text-align: center;">
+   <img src="diagrams/architecture-certification-app-comprehensive-diagram.png" alt="Admin Application Comprehensive Diagram"/>
+</div>
 
 ### Architecture Decision Records
 
