@@ -35,13 +35,13 @@
         - [Aptitude](#aptitude)
     - [Future Architecture](#future-architecture)
       - [AI Case Study Grader](#ai-case-study-grader)
-        - [Candidate Submission:](#candidate-submission)
-        - [Retrieval and Chunking:](#retrieval-and-chunking)
-        - [Embedding and Storage:](#embedding-and-storage)
-        - [Criteria Retrieval:](#criteria-retrieval)
-        - [AI Processing:](#ai-processing)
-        - [Expert Review:](#expert-review)
-        - [Final Grading and Notification:](#final-grading-and-notification)
+        - [1. Candidate Submission:](#1-candidate-submission)
+        - [2. Retrieval and Chunking:](#2-retrieval-and-chunking)
+        - [3. Embedding and Storage:](#3-embedding-and-storage)
+        - [4. Criteria Retrieval:](#4-criteria-retrieval)
+        - [5. AI Processing:](#5-ai-processing)
+        - [6. Expert Review:](#6-expert-review)
+        - [7. Final Grading and Notification:](#7-final-grading-and-notification)
       - [AI Short Answer Grader](#ai-short-answer-grader)
         - [1. Data Preparation:](#1-data-preparation)
         - [2. Storage:](#2-storage)
@@ -199,35 +199,35 @@ Certifiable Inc. faces several challenges due to the anticipated increase in cer
 
 The AI Case Study Grader solution creates a comprehensive and efficient process for grading case study submissions using AI, with expert review and feedback integrated into the workflow.
 
-##### Candidate Submission:
+##### 1. Candidate Submission:
 
 - The candidate submits their architecture solution through the candidate UI.
 - The submission is stored in the Submission Ungraded Database.
 
-##### Retrieval and Chunking:
+##### 2. Retrieval and Chunking:
 
 - The submitted data is retrieved from the ungraded database.
 - The data is chunked to reduce the amount of data and improve processing efficiency.
 
-##### Embedding and Storage:
+##### 3. Embedding and Storage:
 
 - The chunked data is embedded and stored in a vector database for efficient searching and comparison.
 
-##### Criteria Retrieval:
+##### 4. Criteria Retrieval:
 
 - The detailed evaluation criteria for the case study in the form of a rubric is retrieved from the Case Study and Criteria Database.
 
-##### AI Processing:
+##### 5. AI Processing:
 
 - A a prompt orchestration layer will handle user queries and generate prompts for the LLM. The LLM will process the prompts and generate responses.
 - The AI processes the candidate's submission by comparing it against the evaluation criteria in the form of a rubric and evaluates how well the submission meets the criteria and provides a detailed analysis.
 
-##### Expert Review:
+##### 6. Expert Review:
 
 - If the AI's evaluation does not meet a certain accuracy threshold set in the evaluation criteria, the submission is sent for expert review.
 - The expert reviews the AI's analysis and provides additional feedback if necessary.
 
-##### Final Grading and Notification:
+##### 7. Final Grading and Notification:
 
 - The final graded submission is stored in the Architecture Grade and Feedback Database.
 - Notifications are sent to the candidate regarding their results through the Candidate Architecture Notification Service, including summaries of the feedback data highlighting areas for improvement and providing insights into the overall performance of the candidate.
