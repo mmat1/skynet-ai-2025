@@ -21,14 +21,14 @@ last_updated: 02/18/2025
 
 ## Context
 
-- Our RAG AI grading system for short answer questions requires efficient storage, retrieval, and processing of large volumes of data. To achieve this, we need to decide on the best approach for generating embeddings, which are crucial for similarity searches and content retrieval. The two primary options are:
+- Our AI grading system for short answer questions requires efficient storage, retrieval, and processing of large volumes of data. To achieve this, we need to decide on the best approach for generating embeddings, which are crucial for similarity searches and content retrieval. The two primary options are:
   - Pre-processing Data and Applying Embeddings: This involves converting raw content into embeddings before storing it in our vector database. The embeddings are pre-computed and stored alongside the raw content, allowing for efficient retrieval and processing.
   - Using an LLM to Apply Embeddings: This approach involves using a Large Language Model (LLM) to generate embeddings dynamically in real-time based on user queries. The LLM processes the raw content and generates embeddings on-the-fly, providing contextually relevant representations.
 
 ## Decision
 
 - We have decided to apply the embedding model to our exam question and answer data before storing it in a Vector Database.
-  - By pre-processing data and applying embeddings, we can achieve greater efficiency, resource optimization, consistency, and simplified workflow, making it a preferred approach for our RAG AI grading system.
+  - By pre-processing data and applying embeddings, we can achieve greater efficiency, resource optimization, consistency, and simplified workflow, making it a preferred approach for our AI grading system.
 
 ## Consequences
 

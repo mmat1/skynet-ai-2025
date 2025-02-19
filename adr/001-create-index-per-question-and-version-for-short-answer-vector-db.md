@@ -25,7 +25,8 @@ last_updated: 02/18/2025
 
 ## Context
 
-The SoftArchCert system requires an efficient and scalable indexing strategy for storing and retrieving embeddings of questions and answers. The indexing strategy must support various versions of questions and answers, ensuring quick and accurate retrieval for AI grading and analysis.
+- Our AI grading system requires an efficient and scalable indexing strategy for storing and retrieving embeddings of questions and answers.
+- The indexing strategy must support various versions of questions and answers, ensuring quick and accurate retrieval for AI grading and analysis.
 
 ## Decision
 
@@ -42,24 +43,43 @@ The SoftArchCert system requires an efficient and scalable indexing strategy for
 - Storage Costs: The number of indexes will increase, leading to higher storage costs. However, this is offset by the benefits of improved performance and manageability.
 - Complexity: The system will need to manage multiple indexes, but this complexity is justified by the advantages in scalability and flexibility.
 
-## Other Considerations:
+### Pros
 
-### Single Index for All Questions and Versions:
+- Clear Separation:
+  - Version Management: Provides clear separation of different versions, making it easier to manage and track changes.
+  - Independent Updates: Allows for independent updates and deletions of specific versions without affecting other versions.
+- Simplified Management:
+  - Ease of Use: Simplifies the management of indexes by keeping each question and version separate.
+  - Reduced Complexity: Reduces the complexity of handling multiple versions within a single index.
+- Scalability:
+  - Efficient Scaling: Facilitates efficient scaling by allowing the system to handle increasing volumes of data without significant performance degradation.
+  - Flexibility: Provides flexibility in managing and querying data, supporting the system's growth and evolution.
+
+### Cons
+
+- Storage Costs:
+  - Increased Storage: The number of indexes will increase, leading to higher storage costs. However, this is offset by the benefits of improved performance and manageability.
+- Complexity:
+  - Multiple Indexes: The system will need to manage multiple indexes, but this complexity is justified by the advantages in scalability and flexibility.
+
+## Other Options and Considerations
+
+### Single Index for All Questions and Versions
 
 - **Pros**: Simplifies the indexing structure.
 - **Cons**: Requires rebuilding the entire index for any changes, leading to high maintenance costs and potential performance issues.
 
-### Index per Question with All Versions:
+### Index per Question with All Versions
 
 - **Pros**: Allows for version management within a single index.
 - **Cons**: Can lead to large index sizes and complexity in managing multiple versions within the same index.
 
-### Index per Question and Version:
+### Index per Question and Version
 
 - **Pros**: Provides clear separation of versions, simplifies management, and allows for independent updates and deletions.
 - **Cons**: Increases the number of indexes, which may lead to higher storage costs.
 
-### Parent-Child Relationship for Questions and Versions:
+### Parent-Child Relationship for Questions and Versions
 
 - **Pros**: Reduces data duplication by storing common information at the parent level.
 - **Cons**: Adds complexity in managing relationships and querying data.

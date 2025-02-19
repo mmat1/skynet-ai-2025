@@ -22,7 +22,8 @@ last_updated: 02/18/2025
 ## Context
 
 - Certifiable Inc requires candidates of their SoftArchCert to take an aptitude test which includes multiple choice and short answer questions.
-- Our RAG AI system is designed to manage and evaluate candidate exams, providing detailed feedback and analytics. We need an efficient and scalable way to store and retrieve exam data to support various functionalities, including grading, feedback generation, performance analysis, and versioning of data such as questions and answers.
+- Our AI grading system is designed to manage and evaluate candidate exams, providing detailed feedback and analytics.
+- We need an efficient and scalable way to store and retrieve exam data to support various functionalities, including grading, feedback generation, performance analysis, and versioning of data such as questions and answers.
 
 ## Decision
 
