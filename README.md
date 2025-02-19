@@ -34,9 +34,7 @@
         - [Case Study](#case-study)
         - [Aptitude](#aptitude)
     - [Future Architecture](#future-architecture)
-      - [AI Admin Case Studies feedback](#ai-admin-case-studies-feedback)
-      - [AI Admin Expert Refinement of Aptitude Test](#ai-admin-expert-refinement-of-aptitude-test)
-      - [AI Case Study Grader Description](#ai-case-study-grader-description)
+      - [AI Case Study Grader](#ai-case-study-grader)
         - [Candidate Submission:](#candidate-submission)
         - [Retrieval and Chunking:](#retrieval-and-chunking)
         - [Embedding and Storage:](#embedding-and-storage)
@@ -44,13 +42,15 @@
         - [AI Processing:](#ai-processing)
         - [Expert Review:](#expert-review)
         - [Final Grading and Notification:](#final-grading-and-notification)
-      - [AI Short Answer Grader Description](#ai-short-answer-grader-description)
+      - [AI Short Answer Grader](#ai-short-answer-grader)
         - [1. Data Preparation:](#1-data-preparation)
         - [2. Storage:](#2-storage)
         - [3. Query Processing:](#3-query-processing)
         - [4. Grading:](#4-grading)
         - [5. Feedback:](#5-feedback)
         - [6. Candidate Notification:](#6-candidate-notification)
+      - [AI Admin Case Studies feedback](#ai-admin-case-studies-feedback)
+      - [AI Admin Expert Refinement of Aptitude Test](#ai-admin-expert-refinement-of-aptitude-test)
       - [Observability Dashboard](#observability-dashboard)
   - [Dashboard Metrics](#dashboard-metrics)
     - [Overall Reduction in Evaluation Time](#overall-reduction-in-evaluation-time)
@@ -191,6 +191,86 @@ Certifiable Inc. faces several challenges due to the anticipated increase in cer
 
 ### Future Architecture
 
+#### AI Case Study Grader
+
+<div align="left" style="text-align: left;">
+   <img src="diagrams/ai-case-study-auto-grader.drawio.png" alt="AI Case Study Auto Grader"/>
+</div>
+
+The AI Case Study Grader solution creates a comprehensive and efficient process for grading case study submissions using AI, with expert review and feedback integrated into the workflow.
+
+##### Candidate Submission:
+
+- The candidate submits their architecture solution through the candidate UI.
+- The submission is stored in the Submission Ungraded Database.
+
+##### Retrieval and Chunking:
+
+- The submitted data is retrieved from the ungraded database.
+- The data is chunked to reduce the amount of data and improve processing efficiency.
+
+##### Embedding and Storage:
+
+- The chunked data is embedded and stored in a vector database for efficient searching and comparison.
+
+##### Criteria Retrieval:
+
+- The detailed evaluation criteria for the case study in the form of a rubric is retrieved from the Case Study and Criteria Database.
+
+##### AI Processing:
+
+- A a prompt orchestration layer will handle user queries and generate prompts for the LLM. The LLM will process the prompts and generate responses.
+- The AI processes the candidate's submission by comparing it against the evaluation criteria in the form of a rubric and evaluates how well the submission meets the criteria and provides a detailed analysis.
+
+##### Expert Review:
+
+- If the AI's evaluation does not meet a certain accuracy threshold set in the evaluation criteria, the submission is sent for expert review.
+- The expert reviews the AI's analysis and provides additional feedback if necessary.
+
+##### Final Grading and Notification:
+
+- The final graded submission is stored in the Architecture Grade and Feedback Database.
+- Notifications are sent to the candidate regarding their results through the Candidate Architecture Notification Service, including summaries of the feedback data highlighting areas for improvement and providing insights into the overall performance of the candidate.
+- Test results are also stored in the Certification Database and can be accessed through the Candidate Viewer UI.
+
+#### AI Short Answer Grader
+
+<div align="left" style="text-align: left;">
+   <img src="diagrams/ai-short-answer-auto-grader.drawio.png" alt="AI Short Answer Auto Grader"/>
+</div>
+
+The AI Short Answer Grader solution leverages chunking, embedding, and vector databases to efficiently process and grade short answers, ensuring accurate and meaningful feedback for candidates.
+
+##### 1. Data Preparation:
+
+- **Chunking**: Large documents are split into smaller, manageable chunks to facilitate efficient processing and embedding. This involves specifying chunk sizes and overlaps to ensure meaningful segmentation.
+- **Embedding**: Each chunk is converted into a high-dimensional vector using an embedding model, capturing the semantic meaning of the chunk. This process involves using models like BERT or GPT to generate embeddings.
+
+##### 2. Storage:
+
+- **Vector Database**: The embeddings and corresponding chunk data are stored in a vector database. This database is designed to handle high-dimensional vectors efficiently and supports fast similarity searches.
+  - In this solution, the database is used to store both the raw data and the embeddings, allowing for efficient indexing and retrieval.
+
+##### 3. Query Processing:
+
+- **Embedding Candidate Answers**: When a candidate submits an answer, it is converted into an embedding using the same model used for the answer key. This ensures consistency in the representation of the data.
+- **Similarity Search**: The candidate's embedding is compared against the stored embeddings in the vector database to find the most similar chunks. This involves using algorithms like cosine similarity to measure the closeness of the embeddings.
+
+##### 4. Grading:
+
+- **Retrieval of Relevant Chunks**: The top N most similar chunks are retrieved from the vector database. These chunks represent the most relevant parts of the answer key that match the candidate's answer.
+- **LLM Evaluation**: The retrieved chunks, along with the candidate's answer and the original question, are passed to a large language model (LLM) for evaluation. The LLM assesses the similarity and provides a grade, along with feedback if necessary.
+
+##### 5. Feedback:
+
+- **Meaningful Feedback**: The LLM provides detailed feedback on the candidate's answer, highlighting areas of improvement or confirming correctness. This feedback is based on the comparison of the candidate's answer with the retrieved chunks from the answer key. The feedback is personalized for each candidate, including their answer, what parts of the answer were correct or incorrect, and potential areas of improvement. This ensures that the feedback is relevant and meaningful to the candidate.
+- **Feedback Review**: The expert software architects will access the feedback data, which includes the candidate's answer, the relevant chunks from the answer key, and the LLM's evaluation and feedback. They will analyze the feedback to understand the LLM's assessment. They will look at the specific points highlighted by the LLM, such as areas where the candidate's answer was correct or needed improvement, then validate the LLM's feedback by cross-referencing it with the answer key and their own knowledge. They will ensure that the feedback is accurate and aligns with the grading criteria.
+
+##### 6. Candidate Notification:
+
+- **Formatting**: The feedback is formatted in a clear and understandable manner, making it easy for the candidate to comprehend the evaluation and areas of improvement.
+- **Timely Delivery**: The feedback is delivered in a timely manner, ensuring that candidates receive it promptly after the expert review process.
+
 #### AI Admin Case Studies feedback
 
 <div align="left" style="text-align: left;">
@@ -234,85 +314,6 @@ This diagram details the container-level architecture for handling AI grading er
 12. **AI Response Feedback Database**: Stores feedback pulled by Chunk Data to improve AI responses.
 13. **Compression**: Compresses data before sending it to AI Service for Short & Multiple Answer Analysis.
 
-#### AI Case Study Grader Description
-
-<div align="left" style="text-align: left;">
-   <img src="diagrams/ai-case-study-auto-grader.drawio.png" alt="AI Case Study Auto Grader"/>
-</div>
-
-The AI Case Study Grader solution creates a comprehensive and efficient process for grading case study submissions using AI, with expert review and feedback integrated into the workflow.
-
-##### Candidate Submission:
-
-- The candidate submits their architecture solution through the candidate UI.
-- The submission is stored in the Submission Ungraded Database.
-
-##### Retrieval and Chunking:
-
-- The submitted data is retrieved from the ungraded database.
-- The data is chunked to reduce the amount of data and improve processing efficiency.
-
-##### Embedding and Storage:
-
-- The chunked data is embedded and stored in a vector database for efficient searching and comparison.
-
-##### Criteria Retrieval:
-
-- The detailed evaluation criteria for the case study in the form of a rubric is retrieved from the Case Study and Criteria Database.
-
-##### AI Processing:
-
-- A a prompt orchestration layer will handle user queries and generate prompts for the LLM. The LLM will process the prompts and generate responses.
-- The AI processes the candidate's submission by comparing it against the evaluation criteria in the form of a rubric and evaluates how well the submission meets the criteria and provides a detailed analysis.
-
-##### Expert Review:
-
-- If the AI's evaluation does not meet a certain accuracy threshold set in the evaluation criteria, the submission is sent for expert review.
-- The expert reviews the AI's analysis and provides additional feedback if necessary.
-
-##### Final Grading and Notification:
-
-- The final graded submission is stored in the Architecture Grade and Feedback Database.
-- Notifications are sent to the candidate regarding their results through the Candidate Architecture Notification Service, including summaries of the feedback data highlighting areas for improvement and providing insights into the overall performance of the candidate.
-- Test results are also stored in the Certification Database and can be accessed through the Candidate Viewer UI.
-
-#### AI Short Answer Grader Description
-
-<div align="left" style="text-align: left;">
-   <img src="diagrams/ai-short-answer-auto-grader.drawio.png" alt="AI Short Answer Auto Grader"/>
-</div>
-
-The AI Short Answer Grader solution leverages chunking, embedding, and vector databases to efficiently process and grade short answers, ensuring accurate and meaningful feedback for candidates.
-
-##### 1. Data Preparation:
-
-- **Chunking**: Large documents are split into smaller, manageable chunks to facilitate efficient processing and embedding. This involves specifying chunk sizes and overlaps to ensure meaningful segmentation.
-- **Embedding**: Each chunk is converted into a high-dimensional vector using an embedding model, capturing the semantic meaning of the chunk. This process involves using models like BERT or GPT to generate embeddings.
-
-##### 2. Storage:
-
-- **Vector Database**: The embeddings and corresponding chunk data are stored in a vector database. This database is designed to handle high-dimensional vectors efficiently and supports fast similarity searches.
-  - In this solution, the database is used to store both the raw data and the embeddings, allowing for efficient indexing and retrieval.
-
-##### 3. Query Processing:
-
-- **Embedding Candidate Answers**: When a candidate submits an answer, it is converted into an embedding using the same model used for the answer key. This ensures consistency in the representation of the data.
-- **Similarity Search**: The candidate's embedding is compared against the stored embeddings in the vector database to find the most similar chunks. This involves using algorithms like cosine similarity to measure the closeness of the embeddings.
-
-##### 4. Grading:
-
-- **Retrieval of Relevant Chunks**: The top N most similar chunks are retrieved from the vector database. These chunks represent the most relevant parts of the answer key that match the candidate's answer.
-- **LLM Evaluation**: The retrieved chunks, along with the candidate's answer and the original question, are passed to a large language model (LLM) for evaluation. The LLM assesses the similarity and provides a grade, along with feedback if necessary.
-
-##### 5. Feedback:
-
-- **Meaningful Feedback**: The LLM provides detailed feedback on the candidate's answer, highlighting areas of improvement or confirming correctness. This feedback is based on the comparison of the candidate's answer with the retrieved chunks from the answer key. The feedback is personalized for each candidate, including their answer, what parts of the answer were correct or incorrect, and potential areas of improvement. This ensures that the feedback is relevant and meaningful to the candidate.
-- **Feedback Review**: The expert software architects will access the feedback data, which includes the candidate's answer, the relevant chunks from the answer key, and the LLM's evaluation and feedback. They will analyze the feedback to understand the LLM's assessment. They will look at the specific points highlighted by the LLM, such as areas where the candidate's answer was correct or needed improvement, then validate the LLM's feedback by cross-referencing it with the answer key and their own knowledge. They will ensure that the feedback is accurate and aligns with the grading criteria.
-
-##### 6. Candidate Notification:
-
-- **Formatting**: The feedback is formatted in a clear and understandable manner, making it easy for the candidate to comprehend the evaluation and areas of improvement.
-- **Timely Delivery**: The feedback is delivered in a timely manner, ensuring that candidates receive it promptly after the expert review process.
 
 #### Observability Dashboard
 
