@@ -12,13 +12,13 @@ Please refer to the [business case and requirements](requirements.md) for reason
 
    - We prioritized **Performance** and **Accuracy** as our top concern.
 
-    ### Performance
+    ##### Performance
 
     1. **Efficiency and Speed:** AI grading systems can process and evaluate submissions much faster than human graders. This efficiency is crucial for handling the anticipated increase in certification requests, ensuring that results are delivered promptly
     2. **Scalability:** AI systems can easily scale to handle large volumes of submissions without compromising on speed or quality. This scalability is essential for managing the expected 5-10X increase in demand
     3. **Reduced Workload:** By automating the grading process, AI reduces the workload on human experts, allowing them to focus on more complex and nuanced tasks that require human judgment
 
-    ### Accuracy
+    ##### Accuracy
         
     1. **Consistency:** AI grading systems follow predefined rules and standards, ensuring consistent and objective evaluations. This consistency helps maintain high standards across all submissions
     2. **Error Reduction:** AI systems are less prone to fatigue and human error, which can lead to more accurate grading
