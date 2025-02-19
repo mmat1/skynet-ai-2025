@@ -52,12 +52,12 @@
       - [AI Admin Case Studies feedback](#ai-admin-case-studies-feedback)
       - [AI Admin Expert Refinement of Aptitude Test](#ai-admin-expert-refinement-of-aptitude-test)
       - [Observability Dashboard](#observability-dashboard)
-        - [Dashboard Metrics](#dashboard-metrics)
+        - [1. Dashboard Metrics](#1-dashboard-metrics)
           - [Overall Reduction in Evaluation Time](#overall-reduction-in-evaluation-time)
           - [Accuracy](#accuracy)
           - [Performance](#performance)
-        - [Analytics Service Functions](#analytics-service-functions)
-    - [Connected Databases](#connected-databases)
+      - [2. Analytics Service Functions](#2-analytics-service-functions)
+      - [3. Connected Databases](#3-connected-databases)
   - [**Comprehensive Diagrams**](#comprehensive-diagrams)
     - [Admin Application](#admin-application)
     - [Certification Application](#certification-application)
@@ -326,7 +326,7 @@ This diagram details the container-level architecture for handling AI grading er
 
 The Observability Dashboard helps review AI accuracy, performance, and the overall reduction in time taken to evaluate certification exams.
 
-##### Dashboard Metrics
+##### 1. Dashboard Metrics
 
 ###### Overall Reduction in Evaluation Time
 
@@ -344,12 +344,12 @@ est Results:** Measures the average time taken to grade and return results for t
 - **Average Grading Time for AI Autograder for a Case Study:** Measures the average time taken by the AI Autograder to grade a case study.
 
 
-##### Analytics Service Functions
+####  2. Analytics Service Functions
 - **Data Collection and Storage:** Connects to various databases to collect and store data related to aptitude tests, case studies, and feedback.
 - **Data Analysis:** Analyzes the collected data to generate insights on AI accuracy, performance, and evaluation time.
 - **Performance Monitoring:** Monitors key metrics such as average turnaround time, grading accuracy, and grading time for both aptitude tests and case studies.
 
-### Connected Databases
+#### 3. Connected Databases
 The Analytics Service connects to the following databases:
 1. **Aptitude Test Ungraded Database:** Stores ungraded aptitude test submissions.
 2. **Question/Answer Vector Database:** Stores vector representations of questions and answers.
