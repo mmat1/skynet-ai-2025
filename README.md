@@ -32,6 +32,7 @@
     - [AI Admin Expert Refinement of Aptitude Test](#ai-admin-expert-refinement-of-aptitude-test)
     - [Observability Dashboard](#observability-dashboard)
   - [Comprehensive Diagrams](#comprehensive-diagrams)
+    - [System Overview](/system-overview.md)
     - [Admin Application](#admin-application)
     - [Certification Application](#certification-application)
 - [Architecture Decision Records](#architecture-decision-records)
