@@ -1,5 +1,5 @@
 ---
-title: LLM will process one question at a time
+title: LLM will evaluate and grade one question at a time
 authors:
   - Ryan Hertzog
 date_created: 02/17/2025
@@ -21,7 +21,7 @@ last_updated: 02/18/2025
 
 ## Context
 
-- Our RAG AI grading system for short answer questions aims to provide accurate and efficient grading and feedback to students. To achieve this, we need to determine the best approach for evaluating and grading candidate exam responses using our selected LLM. One option is to process multiple questions in a batch, while another is to process one question at a time.
+- Our AI grading system for short answer questions aims to provide accurate and efficient grading and feedback to students. To achieve this, we need to determine the best approach for evaluating and grading candidate exam responses using our selected LLM. One option is to process multiple questions in a batch, while another is to process one question at a time.
 - Given the need for precision, clarity, and detailed feedback, we need to decide on the most effective method for AI to process exam questions.
 
 ## Decision

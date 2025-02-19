@@ -21,7 +21,8 @@ last_updated: 02/18/2025
 
 ## Context
 
-- Our Rag AI system is designed to manage and evaluate large documents and datasets, providing efficient retrieval and processing capabilities. To handle the size and complexity of these documents, we need a strategy that ensures efficient storage, retrieval, and processing while maintaining data integrity and context.
+- Our AI grading system is designed to manage and evaluate large documents and datasets, providing efficient retrieval and processing capabilities.
+- To handle the size and complexity of these documents, we need a strategy that ensures efficient storage, retrieval, and processing while maintaining data integrity and context.
 - Chunking is the process of dividing large pieces of data into smaller, manageable segments, known as chunks. This technique is commonly used in data processing, storage, and retrieval to enhance efficiency and performance. Each chunk represents a portion of the original data, and these chunks can be processed, stored, and retrieved independently.
 
 ## Decision
