@@ -27,13 +27,13 @@ Please refer to the [business case and requirements](requirements.md) for reason
 
 3. **New AI System Components**:
 
-    - 1. AI Short Answer Auto Grader
-    - 2. AI Case Study Auto Grader
-    - 3. AI Response Feedback Service
-    - 4. Case Study AI Pipeline Service
-    - 5. Exam Data AI Pipeline
-    - 6. AI Service for Short and Miltiple Answer Analysis
-    - 7. Question/Answer Data Pipeline AI Service
+     1. AI Short Answer Auto Grader
+     2. AI Case Study Auto Grader
+     3. AI Response Feedback Service
+     4. Case Study AI Pipeline Service
+     5. Exam Data AI Pipeline
+     6. AI Service for Short and Miltiple Answer Analysis
+     7. Question/Answer Data Pipeline AI Service
 
 
 4. **Comprehensive Diagrams**
