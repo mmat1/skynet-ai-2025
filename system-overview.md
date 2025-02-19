@@ -5,7 +5,7 @@ Please refer to the [business case and requirements](requirements.md) for reason
 ## Executive Summary
 
 1. **Problem and Actors**:
-   - We identified four key actors in our solution: **Candiates**, **Expert Software Architect** , **Designated Expert Software Architect** and **Administrator**.
+   - We identified four key actors in our solution: **Candidates**, **Expert Software Architect** , **Designated Expert Software Architect** and **Administrator**.
    - Our goal is to ensure that the current Certifiable Inc software can handle the increased demand for software architecture certifications as they expand to U.K., Europe and Asia, by leveraging AI to streamline the manual process they currently have in place to grade the exams.
 
 2. **Architecture Characteristics**:
@@ -24,15 +24,20 @@ Please refer to the [business case and requirements](requirements.md) for reason
     2. **Error Reduction:** AI systems are less prone to fatigue and human error, which can lead to more accurate grading
     3. **Continuous Improvement:** AI systems can learn and improve over time by incorporating feedback from expert reviewers, leading to increasingly accurate evaluations
 
-
 3. **New AI System Components**:
 
-     1. AI Short Answer Auto Grader
-     2. AI Case Study Auto Grader
-     3. Case Study AI Pipeline Service
-     4. Exam Data AI Pipeline
-     5. AI Service for Short and Multiple Answer Analysis
-     6. Question/Answer Data Pipeline AI Service
+- AI Short Answer Auto Grader
+  - This AI Service will grade short answers based on an answer key.
+- AI Case Study Auto Grader
+  - This AI service will grade case studies based on criteria and rubrics.
+- Case Study AI Pipeline Service
+  - This AI service will provide a pipeline for case study grading and provide a rank based on the rubric.
+- Exam Data AI Pipeline
+  - This AI service will provide a pipeline for exam data and store the information into a Vector database for similarity search.
+- AI Service for Short and Multiple Answer Analysis
+  - This AI service will analyze short answers and multiple-choice responses, feeding back into the Aptitude Test Analysis Service or pulling feedback from the AI Response Feedback Database.
+- Question/Answer Data Pipeline AI Service
+  - This AI service will take the experts question and answer data and store it into a Vector database for similarity search.
 
 
 4. **Comprehensive Diagrams**
