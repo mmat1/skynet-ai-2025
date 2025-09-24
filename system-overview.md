@@ -76,5 +76,15 @@ Please refer to the [business case and requirements](requirements.md) for reason
    <img src="diagrams/architecture-certification-app-comprehensive-diagram.png" alt="Admin Application Comprehensive Diagram"/>
 </div>
 
+## Deployment and Operations
+
+For deployment-related issues, infrastructure troubleshooting, and common operational problems, please refer to the [Troubleshooting Guide](troubleshooting.md).
+
+This includes solutions for:
+- Terraform output parsing errors
+- Infrastructure deployment issues  
+- CI/CD pipeline problems
+- System integration challenges
+
 
 
