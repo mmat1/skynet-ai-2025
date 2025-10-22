@@ -1,0 +1,145 @@
+---
+name: Deploy Azure Function App
+
+'on':
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+env:
+  AZURE_FUNCTIONAPP_NAME: 'skynet-func-app'
+  AZURE_FUNCTIONAPP_PACKAGE_PATH: '.'
+  RESOURCE_GROUP: 'rg-blob-func-dev'
+  LOCATION: 'eastus'
+  STORAGE_ACCOUNT: 'skynetstorageacct'
+  RUNTIME: 'dotnet'
+  FUNCTIONS_VERSION: '4'
+
+jobs:
+  deploy-infrastructure:
+    name: Deploy Azure Infrastructure
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Check if Resource Group exists
+        id: check-rg
+        run: |
+          if az group show --name ${{ env.RESOURCE_GROUP }} &>/dev/null; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+            echo "Resource group ${{ env.RESOURCE_GROUP }} exists"
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+            echo "Resource group ${{ env.RESOURCE_GROUP }} does not exist"
+          fi
+
+      - name: Create Resource Group if needed
+        if: steps.check-rg.outputs.exists == 'false'
+        run: |
+          az group create \
+            --name ${{ env.RESOURCE_GROUP }} \
+            --location ${{ env.LOCATION }}
+
+      - name: Check if Storage Account exists
+        id: check-storage
+        run: |
+          if az storage account show \
+              --name ${{ env.STORAGE_ACCOUNT }} \
+              --resource-group ${{ env.RESOURCE_GROUP }} &>/dev/null; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+            echo "Storage account ${{ env.STORAGE_ACCOUNT }} exists"
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+            echo "Storage account ${{ env.STORAGE_ACCOUNT }} does not exist"
+          fi
+
+      - name: Create Storage Account if needed
+        if: steps.check-storage.outputs.exists == 'false'
+        run: |
+          az storage account create \
+            --name ${{ env.STORAGE_ACCOUNT }} \
+            --resource-group ${{ env.RESOURCE_GROUP }} \
+            --location ${{ env.LOCATION }} \
+            --sku Standard_LRS
+
+      - name: Check if Function App exists
+        id: check-function-app
+        run: |
+          if az functionapp show \
+              --name ${{ env.AZURE_FUNCTIONAPP_NAME }} \
+              --resource-group ${{ env.RESOURCE_GROUP }} &>/dev/null; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+            echo "Function app ${{ env.AZURE_FUNCTIONAPP_NAME }} exists"
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+            echo "Function app ${{ env.AZURE_FUNCTIONAPP_NAME }} does not exist"
+          fi
+
+      - name: Deploy Azure Function App infrastructure if needed
+        if: steps.check-function-app.outputs.exists == 'false'
+        run: |
+          az functionapp create \
+            --resource-group ${{ env.RESOURCE_GROUP }} \
+            --consumption-plan-location ${{ env.LOCATION }} \
+            --runtime ${{ env.RUNTIME }} \
+            --functions-version ${{ env.FUNCTIONS_VERSION }} \
+            --name ${{ env.AZURE_FUNCTIONAPP_NAME }} \
+            --storage-account ${{ env.STORAGE_ACCOUNT }}
+
+          echo "Function app created: ${{ env.AZURE_FUNCTIONAPP_NAME }}"
+
+      - name: Verify Function App exists
+        run: |
+          if az functionapp show \
+              --name ${{ env.AZURE_FUNCTIONAPP_NAME }} \
+              --resource-group ${{ env.RESOURCE_GROUP }} &>/dev/null; then
+            echo "✓ Function app ready: ${{ env.AZURE_FUNCTIONAPP_NAME }}"
+            echo "FUNCTION_APP_NAME=${{ env.AZURE_FUNCTIONAPP_NAME }}" \
+              >> $GITHUB_ENV
+          else
+            echo "✗ Function app not found: ${{ env.AZURE_FUNCTIONAPP_NAME }}"
+            exit 1
+          fi
+
+  deploy-function-code:
+    name: Deploy Function Code
+    needs: deploy-infrastructure
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '6.0.x'
+
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Build and deploy function code
+        run: |
+          # Build the function app (adjust path as needed)
+          # dotnet build --configuration Release
+
+          # Deploy to Azure Function App
+          # az functionapp deployment source config-zip \
+          #   --resource-group ${{ env.RESOURCE_GROUP }} \
+          #   --name ${{ env.AZURE_FUNCTIONAPP_NAME }} \
+          #   --src <path-to-zip-file>
+
+          echo "Function code deployment would happen here"
+          echo "Ensure you have the correct function app code in your repo"
+          echo "Uncomment and modify the deployment steps above based on"
+          echo "your project structure"

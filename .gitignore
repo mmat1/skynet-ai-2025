@@ -1,0 +1,68 @@
+# Build artifacts
+bin/
+obj/
+dist/
+build/
+*.dll
+*.exe
+*.pdb
+*.cache
+
+# Dependencies
+node_modules/
+packages/
+*.lock
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Azure Functions
+local.settings.json
+__azurite_db*__.json
+__blobstorage__/
+__queuestorage__/
+__azurite_db*__.json
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Test coverage
+coverage/
+*.coverage
+.nyc_output/
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+venv/
+ENV/
+env/
+
+# .NET
+*.user
+*.suo
+project.lock.json
+project.fragment.lock.json
+artifacts/
