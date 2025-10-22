@@ -36,6 +36,7 @@
     - [Admin Application](#admin-application)
     - [Certification Application](#certification-application)
 - [Architecture Decision Records](#architecture-decision-records)
+- [Troubleshooting](troubleshooting.md)
 
 ## Overview
 
@@ -352,3 +353,4 @@ An Architecture Decision Record (ADR) is a document that captures an important a
 - [019 - Use existing databases to measure observability metrics](adr/019-use-existing-databases-to-measure-observability-metrics.md)
 - [020 - Build dashboard for SLO/SLA for AI services](adr/020-build-dashboard-for-SLO-SLA-for-AI-services.md)
 - [021 - Monitor AI costs using vendor provided tools and dashboards](adr/021-monitor-AI-costs-using-vendor-provided-tools-and-dashboards.md)
+- [022 - Handle infrastructure deployment errors and Terraform output parsing](adr/022-handle-infrastructure-deployment-errors-and-terraform-output-parsing.md)
